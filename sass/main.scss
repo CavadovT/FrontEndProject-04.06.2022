@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.store-natice{
+    position: relative;
+    color: #fff;
+    background: rgb(35,58,149);
+    z-index: 1001;
+    .container {
+        font-size: .75rem;
+        text-align: center;
+        padding-top: 0.5625rem;
+        padding-bottom: 0.5625rem;
+    }
+}
