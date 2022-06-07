@@ -225,7 +225,7 @@
 
 .footer-nav .btnCategori {
   border-radius: 20px;
-  padding: 10px 0 10px 0;
+  padding: 15px 0 15px 0;
   color: white;
   font-weight: 600;
   width: 70%;
@@ -233,7 +233,7 @@
 
 .footer-nav .btnTotal {
   position: absolute;
-  border-radius: 20px;
+  border-radius: 50px;
   color: white;
   font-weight: 600;
   width: 30%;
@@ -241,7 +241,7 @@
   padding-top: 5px;
   height: 20px;
   overflow: hidden;
-  top: 50%;
+  top: 60%;
   left: 20%;
   font-size: 8px;
   color: rgba(100, 100, 111, 0.8);
@@ -423,5 +423,27 @@
   border-radius: 30px;
   background-color: #cbeaff;
   color: #2bc7fbff;
+}
+
+#Coursel-section {
+  margin-top: 13%;
+  position: relative;
+}
+
+#Coursel-section .about-product-1 {
+  position: absolute;
+  top: 10%;
+  left: 50px;
+}
+
+#Coursel-section .about-product-2 {
+  position: absolute;
+  top: 10%;
+  left: -50px;
+}
+
+.imgDivstyle {
+  width: 16%;
+  border: 1px solid #cdcdcd;
 }
 /*# sourceMappingURL=main.css.map */
