@@ -215,6 +215,213 @@
 }
 
 .footer-nav {
+  border-bottom: 1px solid;
   padding-left: 9%;
+}
+
+.footer-nav .cotogorie {
+  position: relative;
+}
+
+.footer-nav .btnCategori {
+  border-radius: 20px;
+  padding: 10px 0 10px 0;
+  color: white;
+  font-weight: 600;
+  width: 70%;
+}
+
+.footer-nav .btnTotal {
+  position: absolute;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  width: 30%;
+  z-index: 2;
+  padding-top: 5px;
+  height: 20px;
+  overflow: hidden;
+  top: 50%;
+  left: 20%;
+  font-size: 8px;
+  color: rgba(100, 100, 111, 0.8);
+}
+
+.footer-nav nav {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer-nav nav ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-nav nav ul .home {
+  height: 50px;
+  position: relative;
+}
+
+.footer-nav nav ul .home:hover .HomeSubMenu {
+  margin-top: 24.5px;
+  visibility: visible;
+  background-color: white;
+  z-index: 2;
+}
+
+.footer-nav nav ul .home .HomeSubMenu {
+  position: absolute;
+  visibility: hidden;
+  width: 150%;
+  left: -24px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  background: white;
+  z-index: 2;
+}
+
+.footer-nav nav ul .home .HomeSubMenu:hover {
+  visibility: visible;
+  background-color: white;
+}
+
+.footer-nav nav ul .home .HomeSubMenu li {
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-nav nav ul .home .HomeSubMenu li a {
+  padding: 5px 55px 0px 5px;
+  width: 100%;
+}
+
+.footer-nav nav ul .home .HomeSubMenu li a:hover {
+  padding: 5px 55px 0px 5px;
+  background-color: white;
+  color: #2bc7fbff;
+}
+
+.footer-nav nav ul .shop {
+  height: 50px;
+}
+
+.footer-nav nav ul .shop .ShopSubMenu {
+  visibility: hidden;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 50%;
+  left: 0;
+  width: 100%;
+  background: white;
+  margin-top: 24.5px;
+  z-index: 2;
+}
+
+.footer-nav nav ul .shop .ShopSubMenu > li {
+  position: relative;
+  margin-top: 20px;
+}
+
+.footer-nav nav ul .shop .ShopSubMenu > li .subListMenu {
+  position: absolute;
+  left: -15px;
+  padding: 15px;
+  width: 210px;
+}
+
+.footer-nav nav ul .shop .ShopSubMenu > li .subListMenu li {
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.footer-nav nav ul .shop .ShopSubMenu > li .subListMenu li a {
+  top: 15px;
+  background-color: white;
+  margin-top: 15px;
+}
+
+.footer-nav nav ul .shop .ShopSubMenu > li > a {
+  color: blue;
+  border: none;
+  background: white;
+}
+
+.footer-nav nav ul .shop:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-nav nav ul .shop:hover .ShopSubMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  visibility: visible;
+  height: 50%;
+  background: white;
+  width: 100%;
+  margin-top: 24.5px;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  z-index: 2;
+}
+
+.footer-nav nav ul .shop:hover .ShopSubMenu > li {
+  position: relative;
+  margin-top: 20px;
+}
+
+.footer-nav nav ul .shop:hover .ShopSubMenu > li .subListMenu {
+  position: absolute;
+  left: -15px;
+  padding: 15px;
+  width: 210px;
+}
+
+.footer-nav nav ul .shop:hover .ShopSubMenu > li .subListMenu li {
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.footer-nav nav ul .shop:hover .ShopSubMenu > li .subListMenu li a {
+  top: 15px;
+  background-color: white;
+  margin-top: 15px;
+}
+
+.footer-nav nav ul .shop:hover .ShopSubMenu > li > a {
+  color: blue;
+  border: none;
+  background: white;
+}
+
+.footer-nav nav ul li {
+  padding: 0px !important;
+}
+
+.footer-nav nav ul li > a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+}
+
+.footer-nav nav ul li > a:hover {
+  padding: 10px 15px;
+  border-radius: 30px;
+  background-color: #cbeaff;
+  color: #2bc7fbff;
 }
 /*# sourceMappingURL=main.css.map */
