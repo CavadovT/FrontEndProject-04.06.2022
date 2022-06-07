@@ -22,7 +22,6 @@
 #head-section-nav {
   font-size: 13px;
   height: 50px;
-  border-bottom: 1px solid #cdcdcd;
 }
 
 #head-section-nav .container-head .row #left-colum ul li {
@@ -37,6 +36,12 @@
 
 #head-section-nav .container-head .row #left-colum ul li a:hover {
   color: #24adf3;
+}
+
+.head-nav {
+  padding: 20px 9% 0 0;
+  padding-left: 5%;
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .myborderbtm {
@@ -207,5 +212,9 @@
   border-radius: 50%;
   padding: 10px 12px;
   font-size: 20px;
+}
+
+.footer-nav {
+  padding-left: 9%;
 }
 /*# sourceMappingURL=main.css.map */

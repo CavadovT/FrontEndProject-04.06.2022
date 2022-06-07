@@ -19,11 +19,13 @@
 }
 
 #head-section-nav {
+  
     font-size: 13px;
     height: 50px;
-    border-bottom: 1px solid rgb(205, 205, 205);
 
     .container-head {
+ 
+
         .row {
             #left-colum {
                 ul {
@@ -45,7 +47,12 @@
         }
     }
 }
+.head-nav{
+    padding: 20px 9% 0 0;
+    padding-left: 5%;
+    border-bottom: 1px solid rgb(205, 205, 205);
 
+}
 .myborderbtm {
     border-bottom: 1px solid rgb(205, 205, 205);
 }
@@ -208,4 +215,7 @@
         padding: 10px 12px;
         font-size: 20px;
     }
+}
+.footer-nav{
+    padding-left: 9%;
 }
