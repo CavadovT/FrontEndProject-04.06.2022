@@ -427,19 +427,19 @@
 
 #Coursel-section {
   margin-top: 13%;
+}
+
+#Coursel-section .first, #Coursel-section .second {
   position: relative;
 }
 
-#Coursel-section .about-product-1 {
+#Coursel-section .content {
+  cursor: pointer;
   position: absolute;
+  left: 10%;
+  z-index: 1;
   top: 10%;
-  left: 50px;
-}
-
-#Coursel-section .about-product-2 {
-  position: absolute;
-  top: 10%;
-  left: -50px;
+  width: 30%;
 }
 
 .imgDivstyle {

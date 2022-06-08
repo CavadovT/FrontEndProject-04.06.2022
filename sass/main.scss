@@ -421,19 +421,18 @@
 
 #Coursel-section {
     margin-top: 13%;
-    position: relative;
 
-    .about-product-1 {
-        position: absolute;
-        top: 10%;
-        left: 50px;
+    .first, .second{
+        position: relative;
     }
-
-    .about-product-2 {
+    .content {
+        cursor: pointer;
         position: absolute;
+        left: 10%;
+        z-index: 1;
         top: 10%;
-        left: -50px;
-    }
+        width: 30%;
+      }
 }
 
 .imgDivstyle {
