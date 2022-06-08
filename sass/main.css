@@ -538,11 +538,19 @@ body main .deadlineSection #deadline .categories .rightSide .product .content:ho
           transition-duration: 0.4s;
 }
 
+body main .deadlineSection #deadline .categories .rightSide .product .content:hover .minimize:hover {
+  background-color: #233a95;
+}
+
 body main .deadlineSection #deadline .categories .rightSide .product .content:hover .heart {
   right: 8%;
   visibility: visible;
   -webkit-transition-duration: 0.7s;
           transition-duration: 0.7s;
+}
+
+body main .deadlineSection #deadline .categories .rightSide .product .content:hover .heart:hover {
+  background-color: #233a95;
 }
 
 body main .deadlineSection #deadline .categories .rightSide .product .content:hover button {
@@ -667,7 +675,9 @@ body main .carouselProductSection .product .content button {
 }
 
 body main .extraPercent {
+  width: 80%;
   background-color: #FBEACFFF;
+  text-align: center;
 }
 
 body main .extraPercent :first-child :first-child {
@@ -689,7 +699,67 @@ body main .extraProductSection > div .product {
 }
 
 body main .extraProductSection > div .product .content {
-  padding: 20px;
+  padding: 15px 25px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+body main .extraProductSection > div .product .content:hover {
+  position: absolute;
+  padding: 15px 25px;
+  width: 15.8%;
+  z-index: 5;
+  background: white;
+  border: 1px solid grey;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 11px;
+          box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 11px;
+}
+
+body main .extraProductSection > div .product .content:hover .minimize {
+  right: 8%;
+  visibility: visible;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+body main .extraProductSection > div .product .content:hover .minimize:hover {
+  background-color: #233a95;
+  color: white;
+}
+
+body main .extraProductSection > div .product .content:hover .heart {
+  right: 8%;
+  visibility: visible;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+body main .extraProductSection > div .product .content:hover .heart:hover {
+  background-color: #233a95;
+  color: white;
+}
+
+body main .extraProductSection > div .product .content i {
+  position: absolute;
+  visibility: hidden;
+  top: 12%;
+  background: white;
+  border-radius: 50%;
+  padding: 10px;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+body main .extraProductSection > div .product .content .minimize {
+  top: 5%;
+  right: 5%;
+}
+
+body main .extraProductSection > div .product .content .heart {
+  top: 18%;
+  right: 2%;
 }
 
 body main .extraProductSection > div .product .content a {
@@ -840,9 +910,35 @@ footer .contactBody .contact {
   border-bottom: 1px solid grey;
 }
 
+footer .contactBody .contact .clrphone {
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+  color: #cacaca;
+  margin-right: 15px;
+}
+
+footer .contactBody .contact .spnclr {
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+footer .contactBody .contact .circleiceon {
+  border-radius: 50%;
+  border: none;
+  background-color: whitesmoke;
+  color: #0077B5FF;
+  padding: 10px;
+  margin-left: 5px;
+}
+
 footer .contactBody .contact .contactNumb {
   padding: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+footer .copyrightBody .copyright {
+  opacity: 0.5;
+  font-size: 14px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -536,12 +536,20 @@ body {
                                         visibility: visible;
                                         transition-duration: 0.4s;
 
+                                        &:hover {
+                                            background-color: rgb(35, 58, 149);
+                                        }
+
                                     }
 
                                     .heart {
                                         right: 8%;
                                         visibility: visible;
                                         transition-duration: 0.7s;
+
+                                        &:hover {
+                                            background-color: rgb(35, 58, 149);
+                                        }
 
                                     }
 
@@ -563,6 +571,7 @@ body {
                                 .minimize {
                                     top: 5%;
                                     right: 5%;
+
                                 }
 
                                 .heart {
@@ -638,6 +647,7 @@ body {
                 .content {
                     padding: 20px;
 
+
                     a {
                         font-size: 15px;
                         width: 120%;
@@ -681,7 +691,9 @@ body {
         }
 
         .extraPercent {
+            width: 80%;
             background-color: #FBEACFFF;
+            text-align: center;
 
             :first-child {
                 :first-child {
@@ -705,7 +717,67 @@ body {
                     width: 20%;
 
                     .content {
-                        padding: 20px;
+                        padding: 15px 25px;
+                        cursor: pointer;
+                        position: relative;
+                        transition-duration: 0.5s;
+
+                        &:hover {
+                            position: absolute;
+                            padding: 15px 25px;
+                            width: 15.8%;
+                            z-index: 5;
+                            background: white;
+                            border: 1px solid grey;
+                            box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 11px;
+
+                            .minimize {
+                                right: 8%;
+                                visibility: visible;
+                                transition-duration: 0.4s;
+
+                                &:hover {
+                                    background-color: rgb(35, 58, 149);
+                                    color: white;
+                                }
+                            }
+
+                            .heart {
+                                right: 8%;
+                            
+                                visibility: visible;
+                                transition-duration: 0.7s;
+
+                                &:hover {
+                                    background-color: rgb(35, 58, 149);
+                                    color: white;
+                                }
+                            }
+                           
+    
+                           
+                        }
+                      
+                        i {
+                            position: absolute;
+                            visibility: hidden;
+                            top: 12%;
+                            background: white;
+                            border-radius: 50%;
+                            padding: 10px;
+                            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+                        }
+
+                        .minimize {
+                            top: 5%;
+                            right: 5%;
+                        }
+
+                        .heart {
+                            top: 18%;
+                            right: 2%;
+                        }
+
 
                         a {
                             font-size: 15px;
@@ -877,6 +949,24 @@ footer {
         .contact {
             border-bottom: 1px solid grey;
 
+            .clrphone {
+                transform: rotate(-35deg);
+                color: rgb(202, 202, 202);
+                margin-right: 15px;
+            }
+            .spnclr{
+                opacity: 0.5;
+                font-size: 14px;
+            }
+            .circleiceon{
+                border-radius: 50%;
+                border: none;
+                background-color: whitesmoke;
+                color: #0077B5FF;
+                padding: 10px;
+                margin-left: 5px;
+            }
+
             .contactNumb {
                 padding: 0;
                 flex-wrap: wrap;
@@ -885,6 +975,10 @@ footer {
     }
 
     .copyrightBody {
-        .copyright {}
+        .copyright {
+            opacity: 0.5;
+            font-size: 14px;
+
+        }
     }
 }

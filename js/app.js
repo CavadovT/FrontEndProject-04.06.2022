@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(".location").click(function () {
-        alert("salam")
+
     })
 
     let heartIcon = document.querySelectorAll(".heart")
