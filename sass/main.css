@@ -1027,4 +1027,24 @@ footer .copyrightBody .copyright {
 .sendUs .form form .accaunt .right {
   margin-left: 4%;
 }
+
+.accaunt {
+  margin-top: 20px;
+}
+
+.accaunt h5 {
+  margin-top: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.accaunt input {
+  outline: none !important;
+  background-color: #F3F4F7FF;
+  border: none;
+}
+
+.accaunt input:focus {
+  outline: none !important;
+  outline: none;
+}
 /*# sourceMappingURL=main.css.map */

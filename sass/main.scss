@@ -1080,3 +1080,29 @@ footer {
 }
 //contact page end
 
+
+// account page start
+
+.accaunt {
+    margin-top: 20px;
+
+    h5 {
+        margin-top: 20px;
+        border-bottom: 1px solid rgb(211, 211, 211);
+    }
+
+    input {
+        outline: none !important;
+        background-color: #F3F4F7FF;
+        border: none;
+
+        &:focus {
+            outline: none !important;
+            outline: none;
+
+        }
+    }
+}
+
+// account page end
+
