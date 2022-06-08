@@ -418,21 +418,174 @@
         }
     }
 }
-#Coursel-section{
+
+#Coursel-section {
     margin-top: 13%;
     position: relative;
-    .about-product-1{
+
+    .about-product-1 {
         position: absolute;
         top: 10%;
         left: 50px;
     }
-    .about-product-2{
+
+    .about-product-2 {
         position: absolute;
         top: 10%;
         left: -50px;
     }
 }
-.imgDivstyle{
+
+.imgDivstyle {
     width: 16%;
     border: 1px solid rgb(205, 205, 205);
+}
+
+.deadlineSection {
+    #deadline {
+        .categories {
+            .leftSide {
+                width: 30%;
+                height: 740px;
+                border: 2px solid red;
+                border-radius: 10px;
+
+                .content {
+                    h5 {
+                        color: #2372C1FF;
+                    }
+
+                    .name {
+                        font-size: 20px;
+                        margin: 5px 0;
+                    }
+
+                    p {
+                        img {
+                            width: 100px;
+                        }
+                    }
+
+                    div {
+                        width: 20px;
+
+                        :first-child {
+                            font-size: 16px;
+                        }
+
+                        span {
+                            margin-top: 12px;
+                            size: 20px;
+                            font-weight: 600;
+                        }
+
+                    }
+
+
+                    .time {
+                        width: 100px;
+                        margin: 0 10px;
+                        padding: 15px;
+                        font-weight: 600;
+                        color: white;
+                        background: #ED174AFF;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            .rightSide {
+                flex-wrap: wrap;
+                margin-left: 30px;
+                border: 1px solid rgb(211, 211, 211);
+                border-radius: 10px;
+
+                .product {
+                    border: 0.5px solid rgb(214, 214, 214);
+
+                    .content {
+                        padding: 15px 25px;
+                        cursor: pointer;
+                        position: relative;
+                        transition-duration: 0.5s;
+
+                        &:hover {
+                            position: absolute;
+                            padding: 15px 25px;
+                            width: 18.8%;
+                            z-index: 5;
+                            background: white;
+                            border: 1px solid grey;
+                            box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 11px;
+
+                            .minimize {
+                                right: 8.5%;
+                                visibility: visible;
+                                transition-duration: 0.4s;
+
+                            }
+
+                            .heart {
+                                right: 8%;
+                                visibility: visible;
+                                transition-duration: 0.7s;
+
+                            }
+
+                            button {
+                                display: block;
+                            }
+                        }
+
+                        i {
+                            position: absolute;
+                            visibility: hidden;
+                            top: 12%;
+                            background: white;
+                            border-radius: 50%;
+                            padding: 10px;
+                            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+                        }
+
+                        .minimize {
+                            top: 5%;
+                            right: 5%;
+                        }
+
+                        .heart {
+                            top: 15%;
+                            right: 2%;
+                        }
+
+                        p {
+                            width: 90%;
+                            margin: 0 !important;
+
+                            img {
+                                width: 40%;
+                            }
+                        }
+
+                        strong {
+                            font-size: 10px;
+                            font-weight: 700;
+                            color: #2FC573FF;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+
+                        button {
+                            display: none;
+                            padding: 5px 60px;
+                            margin: 10px 10px;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
