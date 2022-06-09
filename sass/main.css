@@ -1443,31 +1443,20 @@ footer .copyrightBody .copyright {
   border-radius: 10px;
 }
 
-@media (min-width: 768px) {
-  .cntnr {
-    width: 750px;
-  }
+.carouselProductSection .cntnr .carousel-inner .card a {
+  height: 10px;
 }
 
-@media (min-width: 992px) {
-  .cntnr {
-    width: 970px;
-  }
+.carouselProductSection .cntnr .carousel-inner .card strong {
+  display: block;
 }
 
-@media (min-width: 1200px) {
-  .cntnr {
-    width: 1170px;
-  }
+.carouselProductSection .cntnr .carousel-inner .card img {
+  display: block;
 }
 
-@media (max-width: 767px) {
-  #featurecntnr .carousel-inner .carousel-item > div {
-    display: none;
-  }
-  #featurecntnr .carousel-inner .carousel-item > div:first-child {
-    display: block;
-  }
+.carouselProductSection .cntnr .carousel-inner .card span {
+  display: block;
 }
 
 .cntnr {
@@ -1537,6 +1526,33 @@ footer .copyrightBody .copyright {
 
 #featurecntnr .float-end {
   padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .cntnr {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cntnr {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cntnr {
+    width: 1170px;
+  }
+}
+
+@media (max-width: 767px) {
+  #featurecntnr .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  #featurecntnr .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
 }
 
 @media (min-width: 768px) {
