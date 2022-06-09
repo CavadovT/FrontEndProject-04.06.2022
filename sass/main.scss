@@ -962,10 +962,14 @@ footer {
             .circleiceon{
                 border-radius: 50%;
                 border: none;
+                
                 background-color: whitesmoke;
                 color: #0077B5FF;
                 padding: 10px;
                 margin-left: 5px;
+                &:hover{
+                    cursor: pointer;
+                }
             }
 
             .contactNumb {
@@ -1276,5 +1280,3 @@ footer {
         }
     }
 }
-
-//shop page start
