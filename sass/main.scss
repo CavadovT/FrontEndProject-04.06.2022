@@ -538,6 +538,7 @@ body {
 
                                         &:hover {
                                             background-color: rgb(35, 58, 149);
+                                            color: white;
                                         }
 
                                     }
@@ -549,6 +550,7 @@ body {
 
                                         &:hover {
                                             background-color: rgb(35, 58, 149);
+                                            color: white;
                                         }
 
                                     }
@@ -725,8 +727,9 @@ body {
 
                         &:hover {
                             position: absolute;
-                            padding: 15px 25px;
-                            width: 15.8%;
+                            padding: 10px 10px;
+                            width: 14.6%;
+                            margin-right: 5px;
                             z-index: 5;
                             background: white;
                             border: 1px solid grey;
@@ -735,7 +738,7 @@ body {
                             .minimize {
                                 right: 8%;
                                 visibility: visible;
-                                transition-duration: 0.4s;
+                                transition-duration: 1s;
 
                                 &:hover {
                                     background-color: rgb(35, 58, 149);
@@ -747,12 +750,17 @@ body {
                                 right: 8%;
                             
                                 visibility: visible;
-                                transition-duration: 0.7s;
+                                transition-duration: 1s;
 
                                 &:hover {
                                     background-color: rgb(35, 58, 149);
                                     color: white;
                                 }
+                            }
+                            
+                            button {
+                                display: block;
+                                transition-duration: 1s;
                             }
                            
     
@@ -778,7 +786,8 @@ body {
                             top: 18%;
                             right: 2%;
                         }
-
+                        
+                       
 
                         a {
                             font-size: 15px;
@@ -805,6 +814,12 @@ body {
 
                         img {
                             width: 100%;
+                        }
+                        button {
+                            display: none;
+                            padding: 5px 10px;
+                            margin: 10px 10px;
+                            border-radius: 10px;
                         }
                     }
                 }
@@ -1502,4 +1517,126 @@ footer {
         }
     }
 
+}
+
+@media (min-width: 768px) {
+    .cntnr {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .cntnr {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cntnr {
+        width: 1170px;
+    }
+}
+
+@media (max-width: 767px) {
+    #featurecntnr .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    #featurecntnr .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+
+.cntnr {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#featurecntnr .carousel-inner .carousel-item.active,
+#featurecntnr .carousel-inner .carousel-item-next,
+#featurecntnr .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+#featurecntnr .carousel-inner .carousel-item-end,
+#featurecntnr .carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+#featurecntnr .card {
+    border: 0;
+}
+
+#featurecntnr .card {
+    position: relative;
+}
+
+#featurecntnr .card .card-img-overlays {
+    position: absolute;
+
+    color: #fff;
+    font-weight: bolder;
+}
+
+#featurecntnr a {
+    text-decoration: none;
+}
+
+#featurecntnr .indicator {
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 50%;
+    position: absolute;
+    font-size: 20px;
+    top: 45%;
+    padding: 3px 6px 3px 6px;
+}
+
+#featurecntnr .indicator:hover {
+    background-color: blue;
+    border: 1px solid blue;
+    transition: 200ms;
+}
+
+#featurecntnr .indicator:hover {
+    color: white;
+    transition: 200ms;
+}
+
+#featurecntnr .indicator {
+    color: lightgray;
+}
+
+#featurecntnr .float-end {
+    padding-top: 10px;
+}
+
+
+@media (min-width: 768px) {
+
+    #featurecntnr .carousel-inner .carousel-item-end.active,
+    #featurecntnr .carousel-inner .carousel-item-next {
+        transform: translateX(20%);
+    }
+
+    #featurecntnr .carousel-inner .carousel-item-start.active,
+    #featurecntnr .carousel-inner .carousel-item-prev {
+        transform: translateX(-20%);
+    }
+
+    #featurecntnr .card img {
+        width: 90%;
+    }
+
+    #featurecntnr .carousel-item {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 767px) {
+    #featurecntnr .card img {
+        width: 100%;
+    }
 }

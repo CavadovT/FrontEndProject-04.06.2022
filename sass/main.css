@@ -540,6 +540,7 @@ body main .deadlineSection #deadline .categories .rightSide .product .content:ho
 
 body main .deadlineSection #deadline .categories .rightSide .product .content:hover .minimize:hover {
   background-color: #233a95;
+  color: white;
 }
 
 body main .deadlineSection #deadline .categories .rightSide .product .content:hover .heart {
@@ -551,6 +552,7 @@ body main .deadlineSection #deadline .categories .rightSide .product .content:ho
 
 body main .deadlineSection #deadline .categories .rightSide .product .content:hover .heart:hover {
   background-color: #233a95;
+  color: white;
 }
 
 body main .deadlineSection #deadline .categories .rightSide .product .content:hover button {
@@ -708,8 +710,9 @@ body main .extraProductSection > div .product .content {
 
 body main .extraProductSection > div .product .content:hover {
   position: absolute;
-  padding: 15px 25px;
-  width: 15.8%;
+  padding: 10px 10px;
+  width: 14.6%;
+  margin-right: 5px;
   z-index: 5;
   background: white;
   border: 1px solid grey;
@@ -720,8 +723,8 @@ body main .extraProductSection > div .product .content:hover {
 body main .extraProductSection > div .product .content:hover .minimize {
   right: 8%;
   visibility: visible;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 body main .extraProductSection > div .product .content:hover .minimize:hover {
@@ -732,13 +735,19 @@ body main .extraProductSection > div .product .content:hover .minimize:hover {
 body main .extraProductSection > div .product .content:hover .heart {
   right: 8%;
   visibility: visible;
-  -webkit-transition-duration: 0.7s;
-          transition-duration: 0.7s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 body main .extraProductSection > div .product .content:hover .heart:hover {
   background-color: #233a95;
   color: white;
+}
+
+body main .extraProductSection > div .product .content:hover button {
+  display: block;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 body main .extraProductSection > div .product .content i {
@@ -785,6 +794,13 @@ body main .extraProductSection > div .product .content strong {
 
 body main .extraProductSection > div .product .content img {
   width: 100%;
+}
+
+body main .extraProductSection > div .product .content button {
+  display: none;
+  padding: 5px 10px;
+  margin: 10px 10px;
+  border-radius: 10px;
 }
 
 body main .lastSectionBody .lastSection {
@@ -1469,33 +1485,6 @@ footer .copyrightBody .copyright {
   display: flex;
 }
 
-@media (min-width: 768px) {
-  #featurecntnr .carousel-inner .carousel-item-end.active,
-  #featurecntnr .carousel-inner .carousel-item-next {
-    -webkit-transform: translateX(20%);
-            transform: translateX(20%);
-  }
-  #featurecntnr .carousel-inner .carousel-item-start.active,
-  #featurecntnr .carousel-inner .carousel-item-prev {
-    -webkit-transform: translateX(-20%);
-            transform: translateX(-20%);
-  }
-  #featurecntnr .card img {
-    width: 90%;
-  }
-  #featurecntnr .carousel-item {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-@media (max-width: 767px) {
-  #featurecntnr .card img {
-    width: 100%;
-  }
-}
-
 #featurecntnr .carousel-inner .carousel-item-end,
 #featurecntnr .carousel-inner .carousel-item-start {
   -webkit-transform: translateX(0);
@@ -1548,5 +1537,32 @@ footer .copyrightBody .copyright {
 
 #featurecntnr .float-end {
   padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+  #featurecntnr .carousel-inner .carousel-item-end.active,
+  #featurecntnr .carousel-inner .carousel-item-next {
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+  #featurecntnr .carousel-inner .carousel-item-start.active,
+  #featurecntnr .carousel-inner .carousel-item-prev {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+  #featurecntnr .card img {
+    width: 90%;
+  }
+  #featurecntnr .carousel-item {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  #featurecntnr .card img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
