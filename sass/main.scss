@@ -34,6 +34,7 @@
 
 }
 
+
 body {
     header {
         .head-nav {
@@ -637,7 +638,7 @@ body {
         }
 
         .carouselProductSection {
-            
+
             button {
                 font-size: 12px;
                 font-weight: 600;
@@ -748,7 +749,7 @@ body {
 
                             .heart {
                                 right: 8%;
-                            
+
                                 visibility: visible;
                                 transition-duration: 1s;
 
@@ -757,16 +758,16 @@ body {
                                     color: white;
                                 }
                             }
-                            
+
                             button {
                                 display: block;
                                 transition-duration: 1s;
                             }
-                           
-    
-                           
+
+
+
                         }
-                      
+
                         i {
                             position: absolute;
                             visibility: hidden;
@@ -786,8 +787,8 @@ body {
                             top: 18%;
                             right: 2%;
                         }
-                        
-                       
+
+
 
                         a {
                             font-size: 15px;
@@ -815,6 +816,7 @@ body {
                         img {
                             width: 100%;
                         }
+
                         button {
                             display: none;
                             padding: 5px 10px;
@@ -970,19 +972,22 @@ footer {
                 color: rgb(202, 202, 202);
                 margin-right: 15px;
             }
-            .spnclr{
+
+            .spnclr {
                 opacity: 0.5;
                 font-size: 14px;
             }
-            .circleiceon{
+
+            .circleiceon {
                 border-radius: 50%;
                 border: none;
-                
+
                 background-color: whitesmoke;
                 color: #0077B5FF;
                 padding: 10px;
                 margin-left: 5px;
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                 }
             }
@@ -1097,6 +1102,7 @@ footer {
 
     }
 }
+
 //contact page end
 
 
@@ -1518,20 +1524,26 @@ footer {
     }
 
 }
+
+
+
 .carouselProductSection .cntnr .carousel-inner .card {
-    a{
+    a {
         height: 10px;
     }
-    strong{
+
+    strong {
         display: block;
     }
-    img{
+
+    img {
         display: block;
     }
-    span{
+
+    span {
         display: block;
     }
-  
+
 }
 
 
@@ -1542,6 +1554,58 @@ footer {
     margin-left: auto;
 }
 
+
+//cart page start
+
+#maincard {
+    #cont {
+        .homeclick {
+            margin-left: 5px;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.56);
+            font-size: 12px;
+            &:hover{
+                color: rgb(35, 58, 149);
+            }
+        }
+
+        .cartclick {
+            margin-left: 5px;
+            text-decoration: none;
+            color: rgb(198, 198, 198);
+            font-size: 12px;
+            cursor: none;
+        }
+
+        .updatecartsection {
+            margin-top: 50px;
+            margin-left: 5px;
+            border: 1px solid rgb(107, 107, 107);
+            padding-top: 10px;
+            width: 97%;
+        }
+
+        .rigthCartSide {
+
+            button {
+                width: auto;
+                margin-top: 5px;
+            }
+
+            .row {
+                border-bottom: 1px solid gray;
+
+                input {
+                    margin-left: 5px;
+                    margin-top: 5px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+//cart page end
 #featurecntnr .carousel-inner .carousel-item.active,
 #featurecntnr .carousel-inner .carousel-item-next,
 #featurecntnr .carousel-inner .carousel-item-prev {

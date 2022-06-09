@@ -1466,6 +1466,48 @@ footer .copyrightBody .copyright {
   margin-left: auto;
 }
 
+#maincard #cont .homeclick {
+  margin-left: 5px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.56);
+  font-size: 12px;
+}
+
+#maincard #cont .homeclick:hover {
+  color: #233a95;
+}
+
+#maincard #cont .cartclick {
+  margin-left: 5px;
+  text-decoration: none;
+  color: #c6c6c6;
+  font-size: 12px;
+  cursor: none;
+}
+
+#maincard #cont .updatecartsection {
+  margin-top: 50px;
+  margin-left: 5px;
+  border: 1px solid #6b6b6b;
+  padding-top: 10px;
+  width: 97%;
+}
+
+#maincard #cont .rigthCartSide button {
+  width: auto;
+  margin-top: 5px;
+}
+
+#maincard #cont .rigthCartSide .row {
+  border-bottom: 1px solid gray;
+}
+
+#maincard #cont .rigthCartSide .row input {
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 50%;
+}
+
 #featurecntnr .carousel-inner .carousel-item.active,
 #featurecntnr .carousel-inner .carousel-item-next,
 #featurecntnr .carousel-inner .carousel-item-prev {
