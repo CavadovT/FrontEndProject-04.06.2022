@@ -16,12 +16,12 @@ addBtns.forEach((btn) => {
     if (existProduct == undefined) {
       arr.push({
         id: prodId,
-        price: this.previousElementSibling.innerText.split(" ")[1],
+        // price: this.previousElementSibling.firstElementChild.innerText,
         imgUrl:
-          this.parentElement.parentElement.firstElementChild.getAttribute(
+          this.parentElement.firstElementChild.getAttribute(
             "src"
           ),
-        name: this.parentElement.firstElementChild.innerText,
+        name: this.parentElement.firstElementChild.nextElementSibling.innerText,
         count: 1,
       });
     } else {
@@ -40,7 +40,7 @@ function writeProductCount() {
     arr.map(product=>{
       totalCount+=product.count;
     })
-  productCount.innerText=totalCount;
+   productCount.innerText=totalCount;
   }
 }
 writeProductCount();
