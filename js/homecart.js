@@ -34,7 +34,6 @@ function writeProductCount() {
     let arr = JSON.parse(localStorage.getItem("basket"));
     let totalCount = 0;
     arr.map((product) => {
-      console.log(product.price);
       totalCount += parseInt(product.count);
     });
     productCount.innerText = totalCount;

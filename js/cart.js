@@ -11,11 +11,8 @@ if (localStorage.getItem("basket") != null) {
 
   arr.forEach((prod) => {
     if (prod.count == 0) {
-      // cardcontainer.classList.add("d-none");
-      // emptiycart.classList.remove("d-none");
     } else {
-      // emptiycart.classList.add("d-none");
-      // cardcontainer.classList.remove("d-none");
+      emptiycart.classList.add("d-none");
 
       let tr = document.createElement("tr");
       let tdImage = document.createElement("td");
@@ -42,7 +39,7 @@ if (localStorage.getItem("basket") != null) {
       plusBtn.setAttribute("id", "p");
       let spancount = document.createElement("span");
       let spanSubtotal = document.createElement("span");
-      spanSubtotal.innerText = prod.count * prod.price;
+      spanSubtotal.innerText = (prod.count * prod.price).toFixed(2);
       spancount.innerText = prod.count;
 
       let tdSubtotal = document.createElement("td");
@@ -70,8 +67,10 @@ if (localStorage.getItem("basket") != null) {
         } else {
           spancount.innerText = prod.count;
           tdQuantity.append(minusBtn, spancount, plusBtn);
-          spanSubtotal.innerText = parseFloat(prod.count * prod.price).toFixed(2);
-          // tdSubtotal.append(spanSubtotal, btnremove);
+          spanSubtotal.innerText = parseFloat(prod.count * prod.price).toFixed(
+            2
+          );
+          tdSubtotal.append(spanSubtotal, btnremove);
           SumTotalPrice -= parseFloat(prod.price);
           totalprice.innerText = SumTotalPrice.toFixed(2);
           totalfix.innerText = parseFloat(SumTotalPrice + 5).toFixed(2);
@@ -79,6 +78,10 @@ if (localStorage.getItem("basket") != null) {
 
         localStorage.setItem("basket", JSON.stringify(arr));
         writeProductCount();
+        if (SumTotalPrice <= 1) {
+          cardcontainer.classList.add("d-none");
+          emptiycart.classList.remove("d-none");
+        }
       });
 
       plusBtn.addEventListener("click", () => {
@@ -96,19 +99,19 @@ if (localStorage.getItem("basket") != null) {
         writeProductCount();
       });
 
-      let btnRemove = document.querySelectorAll(".btnrmv");
-      console.log(btnRemove);
-      // btnRemove.onclick= function(){
-      //   alert("salam");
-      //   e.parentElement.remove();
-      //   localStorage.removeItem(e.parentElement);
-      //   SumTotalPrice -= prod.count * prod.price;
-      //   prod.count = 0;
-      //   totalprice.innerText = parseFloat(SumTotalPrice).toFixed(2);
-      //   totalfix.innerText = parseFloat(SumTotalPrice + 5).toFixed(2);
-      //   localStorage.setItem("basket", JSON.stringify(arr));
-      //   WriteProductCount();
-      // };
+      btnremove.addEventListener("click", () => {
+        tr.remove();
+        SumTotalPrice -= parseFloat(prod.price * prod.count);
+        totalprice.innerText = SumTotalPrice.toFixed(2);
+        totalfix.innerText = parseFloat(SumTotalPrice + 5).toFixed(2);
+        prod.count = 0;
+        localStorage.setItem("basket", JSON.stringify(arr));
+        writeProductCount();
+        if (SumTotalPrice <= 1) {
+          cardcontainer.classList.add("d-none");
+          emptiycart.classList.remove("d-none");
+        }
+      });
 
       table.lastElementChild.append(tr);
       SumTotalPrice += parseFloat(prod.count * prod.price);
