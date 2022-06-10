@@ -19,8 +19,8 @@
 </head>
 
 <body>
-     <!-- header section start -->
-     <header>
+    <!-- header section start -->
+    <header>
         <div class="container-fluid head-nav">
             <div class="row covid-nav">
                 <div class="covid d-flex justify-content-center fw-light"> Due to the <span id="covidSpan"
@@ -86,7 +86,8 @@
                 <div class="right-third-nav col-3 d-flex justify-content-start">
                     <div class="userIcon"> <a href="/hmtls/account.html"><i class="fas fa-user"></i></a> </div>
                     <div class="basket px-3">
-                        <span class="price">$0.00</span>
+                        <span>$</span>
+                        <span id="ptotal" class="price">0</span>
                         <a href="/hmtls/card.html">
                             <i class='bx bx-basket basketIcon'><span class="productCount">0</span></i>
                         </a>
@@ -183,139 +184,138 @@
     </header>
     <!-- header section end -->
 
-
     <!-- main section start -->
-        <div class="container-fluid blog">
-            <div class="container">
-                <div class="row d-flex justify-content-around col-12">
-                    <section class="section col-8">
-                        <div id="article1" class="article">
-                            <img class="w-100" src="/images/imgblog/blog-3.jpg" alt="">
-                            <span>May 3, 2021
-                                Tips & Tricks
-                                food, store, themeforest</span>
-                            <h1>But I must explain to you how all this mistaken idea</h1>
-                            <p>
-                                Pellentesque feugiat, sem id interdum molestie, libero nibh imperdiet velit, sodales
-                                elementum
-                                enim
-                                sem sed lectus. Vivamus viverra diam congue tristique pellentesque. Proin efficitur est
-                                vel
-                                lectus
-                                ultrices rhoncus eu ut lacus. In gravida leo at justo lobortis, vitae aliquet justo
-                                vehicula.
-                                Maecenas at facilisis ex. Curabitur cursus, ex id efficitur ultrices, sapien mauris
-                                sodales
-                            </p>
-                            <button class="btn btn-primary"> Read More</button>
-                        </div>
+    <div class="container-fluid blog">
+        <div class="container">
+            <div class="row d-flex justify-content-around col-12">
+                <section class="section col-8">
+                    <div id="article1" class="article">
+                        <img class="w-100" src="/images/imgblog/blog-3.jpg" alt="">
+                        <span>May 3, 2021
+                            Tips & Tricks
+                            food, store, themeforest</span>
+                        <h1>But I must explain to you how all this mistaken idea</h1>
+                        <p>
+                            Pellentesque feugiat, sem id interdum molestie, libero nibh imperdiet velit, sodales
+                            elementum
+                            enim
+                            sem sed lectus. Vivamus viverra diam congue tristique pellentesque. Proin efficitur est
+                            vel
+                            lectus
+                            ultrices rhoncus eu ut lacus. In gravida leo at justo lobortis, vitae aliquet justo
+                            vehicula.
+                            Maecenas at facilisis ex. Curabitur cursus, ex id efficitur ultrices, sapien mauris
+                            sodales
+                        </p>
+                        <button class="btn btn-primary"> Read More</button>
+                    </div>
 
-                        <div id="article2" class="mt-5 article">
-                            <img class="w-100" src="/images/imgblog/blog-5.jpg" alt="">
-                            <span>May 3, 2021
-                                Grocery
-                                envato, fresh</span>
-                            <h1>The Problem With Typefaces on the Web</h1>
-                            <p>
-                                Pellentesque feugiat, sem id interdum molestie, libero nibh imperdiet velit, sodales
-                                elementum
-                                enim
-                                sem sed lectus. Vivamus viverra diam congue tristique pellentesque. Proin efficitur est
-                                vel
-                                lectus
-                                ultrices rhoncus eu ut lacus. In gravida leo at justo lobortis, vitae aliquet justo
-                                vehicula.
-                                Maecenas at facilisis ex. Curabitur cursus, ex id efficitur ultrices, sapien mauris
-                                sodales
-                            </p>
-                            <button class="btn btn-primary"> Read More</button>
-                        </div>
+                    <div id="article2" class="mt-5 article">
+                        <img class="w-100" src="/images/imgblog/blog-5.jpg" alt="">
+                        <span>May 3, 2021
+                            Grocery
+                            envato, fresh</span>
+                        <h1>The Problem With Typefaces on the Web</h1>
+                        <p>
+                            Pellentesque feugiat, sem id interdum molestie, libero nibh imperdiet velit, sodales
+                            elementum
+                            enim
+                            sem sed lectus. Vivamus viverra diam congue tristique pellentesque. Proin efficitur est
+                            vel
+                            lectus
+                            ultrices rhoncus eu ut lacus. In gravida leo at justo lobortis, vitae aliquet justo
+                            vehicula.
+                            Maecenas at facilisis ex. Curabitur cursus, ex id efficitur ultrices, sapien mauris
+                            sodales
+                        </p>
+                        <button class="btn btn-primary"> Read More</button>
+                    </div>
 
-                        <div id="article3" class="mt-5 article">
-                            <img class="w-100" src="/images/imgblog/blog-1.jpg" alt="">
-                            <span>May 2, 2021
-                                Grocery
-                                food, organic</span>
-                            <h1>English Breakfast Tea With Tasty Donut Desserts</h1>
-                            <p>
-                                Pellentesque feugiat, sem id interdum molestie, libero nibh imperdiet velit, sodales
-                                elementum enim sem sed lectus. Vivamus viverra diam congue tristique pellentesque. Proin
-                                efficitur est vel lectus ultrices rhoncus eu ut lacus. In gravida leo at justo lobortis,
-                                vitae aliquet justo vehicula. Maecenas at facilisis ex. Curabitur cursus, ex id
-                                efficitur
-                                ultrices, sapien mauris sodales
-                            </p>
-                            <button class="btn btn-primary"> Read More</button>
-                        </div>
+                    <div id="article3" class="mt-5 article">
+                        <img class="w-100" src="/images/imgblog/blog-1.jpg" alt="">
+                        <span>May 2, 2021
+                            Grocery
+                            food, organic</span>
+                        <h1>English Breakfast Tea With Tasty Donut Desserts</h1>
+                        <p>
+                            Pellentesque feugiat, sem id interdum molestie, libero nibh imperdiet velit, sodales
+                            elementum enim sem sed lectus. Vivamus viverra diam congue tristique pellentesque. Proin
+                            efficitur est vel lectus ultrices rhoncus eu ut lacus. In gravida leo at justo lobortis,
+                            vitae aliquet justo vehicula. Maecenas at facilisis ex. Curabitur cursus, ex id
+                            efficitur
+                            ultrices, sapien mauris sodales
+                        </p>
+                        <button class="btn btn-primary"> Read More</button>
+                    </div>
 
-                        <div id="article4" class="mt-5 article d-none">
-                            <img class="w-100" src="/images/imgblog/blog-4.jpg" alt="">
-                            <span>May 2, 2021 Grocery food, organic</span>
-                            <h1>On the other hand we provide denounce with righteous</h1>
-                            <p>
-                                Pellentesque feugiat, sem id interdum molestie, libero nibh imperdiet velit, sodales
-                                elementum enim sem sed lectus. Vivamus viverra diam congue tristique pellentesque. Proin
-                                efficitur est vel lectus ultrices rhoncus eu ut lacus. In gravida leo at justo lobortis,
-                                vitae aliquet justo vehicula. Maecenas at facilisis ex. Curabitur cursus, ex id
-                                efficitur
-                                ultrices, sapien mauris sodales
-                            </p>
-                            <button class="btn btn-primary"> Read More</button>
-                        </div>
-                        <div class="numbs">
-                            <i id="leftIcon" class="fas fa-chevron-left d-none"></i>
-                            <strong id="numb1" class="numb active">1</strong>
-                            <strong id="numb2" class="numb ">2</strong>
-                            <i id="rightIcon" class="fas fa-chevron-right"></i>
-                        </div>
+                    <div id="article4" class="mt-5 article d-none">
+                        <img class="w-100" src="/images/imgblog/blog-4.jpg" alt="">
+                        <span>May 2, 2021 Grocery food, organic</span>
+                        <h1>On the other hand we provide denounce with righteous</h1>
+                        <p>
+                            Pellentesque feugiat, sem id interdum molestie, libero nibh imperdiet velit, sodales
+                            elementum enim sem sed lectus. Vivamus viverra diam congue tristique pellentesque. Proin
+                            efficitur est vel lectus ultrices rhoncus eu ut lacus. In gravida leo at justo lobortis,
+                            vitae aliquet justo vehicula. Maecenas at facilisis ex. Curabitur cursus, ex id
+                            efficitur
+                            ultrices, sapien mauris sodales
+                        </p>
+                        <button class="btn btn-primary"> Read More</button>
+                    </div>
+                    <div class="numbs">
+                        <i id="leftIcon" class="fas fa-chevron-left d-none"></i>
+                        <strong id="numb1" class="numb active">1</strong>
+                        <strong id="numb2" class="numb ">2</strong>
+                        <i id="rightIcon" class="fas fa-chevron-right"></i>
+                    </div>
 
 
-                    </section>
-                    <div class="sideBar col-3">
-                        <input type="text" placeholder="Search...">
-                        <h6>POPULAR POSTS</h6>
-                        <div class="content">
-                            <div class="d-flex justify-content-between">
-                                <img src="/images/imgblog/blog-3-100x100.jpg" alt="">
-                                <p>1</p>
-                                <span> But I must explain to you how all this mistaken idea</span>
-                            </div>
-                            <div class="d-flex justify-content-between my-5">
-                                <img src="/images/imgblog/blog-5-100x100.jpg" alt="">
-                                <p>2</p>
-                                <span> The Problem With Typefaces on the Web</span>
-                            </div>
-                            <div class="d-flex justify-content-between">
-                                <img src="/images/imgblog/blog-1-100x100.jpg" alt="">
-                                <p>3</p>
-                                <span> English Breakfast Tea With Tasty Donut Desserts</span>
-                            </div>
+                </section>
+                <div class="sideBar col-3">
+                    <input type="text" placeholder="Search...">
+                    <h6>POPULAR POSTS</h6>
+                    <div class="content">
+                        <div class="d-flex justify-content-between">
+                            <img src="/images/imgblog/blog-3-100x100.jpg" alt="">
+                            <p>1</p>
+                            <span> But I must explain to you how all this mistaken idea</span>
                         </div>
-                        <h6>SOSIAL MEDIA</h6>
-                        <div class="sosialMedia d-flex">
-                            <button class="fb">FACEBOOK</button>
-                            <button class="tw">TWITTER</button>
-                            <button class="pn">PINTEREST</button>
-                            <button class="in">LINKEDIN</button>
-                            <button class="rd">REDDIT</button>
+                        <div class="d-flex justify-content-between my-5">
+                            <img src="/images/imgblog/blog-5-100x100.jpg" alt="">
+                            <p>2</p>
+                            <span> The Problem With Typefaces on the Web</span>
                         </div>
-                        <h6>WIDGET BANNER</h6>
-                        <img src="/images/imgblog/sidebar-banner.gif" alt="">
-                        <h6>TAGS</h6>
-                        <div class="tags d-flex">
-                            <button>envato</button>
-                            <button>food</button>
-                            <button>fresh</button>
-                            <button>grocery</button>
-                            <button>organic</button>
-                            <button>quality</button>
-                            <button>store</button>
-                            <button>themeforest</button>
+                        <div class="d-flex justify-content-between">
+                            <img src="/images/imgblog/blog-1-100x100.jpg" alt="">
+                            <p>3</p>
+                            <span> English Breakfast Tea With Tasty Donut Desserts</span>
                         </div>
+                    </div>
+                    <h6>SOSIAL MEDIA</h6>
+                    <div class="sosialMedia d-flex">
+                        <button class="fb">FACEBOOK</button>
+                        <button class="tw">TWITTER</button>
+                        <button class="pn">PINTEREST</button>
+                        <button class="in">LINKEDIN</button>
+                        <button class="rd">REDDIT</button>
+                    </div>
+                    <h6>WIDGET BANNER</h6>
+                    <img src="/images/imgblog/sidebar-banner.gif" alt="">
+                    <h6>TAGS</h6>
+                    <div class="tags d-flex">
+                        <button>envato</button>
+                        <button>food</button>
+                        <button>fresh</button>
+                        <button>grocery</button>
+                        <button>organic</button>
+                        <button>quality</button>
+                        <button>store</button>
+                        <button>themeforest</button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
     <!-- main section end -->
 
