@@ -1,27 +1,34 @@
 let table = document.getElementById("table");
-let total = document.getElementById("total");
-let backhome=document.getElementById("home");
-
+let totalprice = document.getElementById("totalprice");
+let backhome = document.getElementById("home");
+let totalfix = document.getElementById("totalfix");
+let emptiycart = document.getElementById("empity");
+let cardcontainer = document.getElementById("cont");
 let SumTotalPrice = 0;
 
 if (localStorage.getItem("basket") != null) {
   let arr = JSON.parse(localStorage.getItem("basket"));
 
   arr.forEach((prod) => {
-    if (prod.count != 0) {
+    if (prod.count == 0) {
+      // cardcontainer.classList.add("d-none");
+      // emptiycart.classList.remove("d-none");
+    } else {
+      // emptiycart.classList.add("d-none");
+      // cardcontainer.classList.remove("d-none");
+
       let tr = document.createElement("tr");
       let tdImage = document.createElement("td");
       let image = document.createElement("img");
       image.setAttribute("src", prod.imgUrl);
       image.style.width = "100px";
       image.style.height = "80px";
-      tdImage.append(image);
 
       let tdName = document.createElement("td");
       tdName.innerText = prod.name;
 
       let tdPrice = document.createElement("td");
-      tdPrice.innerText = prod.price;
+      tdPrice.innerText = parseFloat(prod.price);
 
       let tdQuantity = document.createElement("td");
       let minusBtn = document.createElement("button");
@@ -38,33 +45,38 @@ if (localStorage.getItem("basket") != null) {
       spanSubtotal.innerText = prod.count * prod.price;
       spancount.innerText = prod.count;
 
-      tdQuantity.append(minusBtn, spancount, plusBtn);
-
       let tdSubtotal = document.createElement("td");
       let btnremove = document.createElement("button");
       btnremove.innerText = "x";
       btnremove.classList.add("btnrmv");
 
+      tdImage.append(image);
+
       tdSubtotal.setAttribute("id", "sub");
 
       tdSubtotal.append(spanSubtotal, btnremove);
+
+      tdQuantity.append(minusBtn, spancount, plusBtn);
 
       tr.append(tdImage, tdName, tdPrice, tdQuantity, tdSubtotal);
 
       minusBtn.addEventListener("click", () => {
         prod.count--;
         if (prod.count <= 0) {
-          SumTotalPrice -= parseInt(prod.price);
-          total.innerText = SumTotalPrice;
           tr.remove();
+          SumTotalPrice -= parseFloat(prod.price);
+          totalprice.innerText = SumTotalPrice.toFixed(2);
+          totalfix.innerText = parseFloat(SumTotalPrice + 5).toFixed(2);
         } else {
           spancount.innerText = prod.count;
           tdQuantity.append(minusBtn, spancount, plusBtn);
-          spanSubtotal.innerText = prod.count * prod.price;
-          tdSubtotal.append(spanSubtotal, btnremove);
-          SumTotalPrice -= parseInt(prod.price);
-          total.innerText = SumTotalPrice;
+          spanSubtotal.innerText = parseFloat(prod.count * prod.price).toFixed(2);
+          // tdSubtotal.append(spanSubtotal, btnremove);
+          SumTotalPrice -= parseFloat(prod.price);
+          totalprice.innerText = SumTotalPrice.toFixed(2);
+          totalfix.innerText = parseFloat(SumTotalPrice + 5).toFixed(2);
         }
+
         localStorage.setItem("basket", JSON.stringify(arr));
         writeProductCount();
       });
@@ -73,33 +85,39 @@ if (localStorage.getItem("basket") != null) {
         prod.count++;
         spancount.innerText = prod.count;
         tdQuantity.append(minusBtn, spancount, plusBtn);
-        spanSubtotal.innerText = prod.count * prod.price;
+        spanSubtotal.innerText = parseFloat(prod.count * prod.price).toFixed(2);
         tdSubtotal.append(spanSubtotal, btnremove);
-        SumTotalPrice += parseInt(prod.price);
-        total.innerText = SumTotalPrice;
+
+        SumTotalPrice += parseFloat(prod.price);
+        totalprice.innerText = SumTotalPrice.toFixed(2);
+        totalfix.innerText = parseFloat(SumTotalPrice + 5).toFixed(2);
+
         localStorage.setItem("basket", JSON.stringify(arr));
         writeProductCount();
       });
 
       let btnRemove = document.querySelectorAll(".btnrmv");
-      btnRemove.forEach((b) => {
-        b.addEventListener("click", () => {
-          this.parentElement.parentElement.remove();
-          localStorage.setItem("basket", JSON.stringify(arr));
-          writeProductCount();
-        });
-      });
+      console.log(btnRemove);
+      // btnRemove.onclick= function(){
+      //   alert("salam");
+      //   e.parentElement.remove();
+      //   localStorage.removeItem(e.parentElement);
+      //   SumTotalPrice -= prod.count * prod.price;
+      //   prod.count = 0;
+      //   totalprice.innerText = parseFloat(SumTotalPrice).toFixed(2);
+      //   totalfix.innerText = parseFloat(SumTotalPrice + 5).toFixed(2);
+      //   localStorage.setItem("basket", JSON.stringify(arr));
+      //   WriteProductCount();
+      // };
 
       table.lastElementChild.append(tr);
-      SumTotalPrice += parseInt(prod.count * prod.price);
-      total.innerText = SumTotalPrice;
+      SumTotalPrice += parseFloat(prod.count * prod.price);
+      totalprice.innerText = SumTotalPrice.toFixed(2);
+      totalfix.innerText = parseFloat(SumTotalPrice + 5).toFixed(2);
       localStorage.setItem("basket", JSON.stringify(arr));
       writeProductCount;
-    } 
-   
-    
-  }
-  );
+    }
+  });
 }
 function writeProductCount() {
   if (localStorage.getItem("basket") != null) {

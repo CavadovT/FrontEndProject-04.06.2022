@@ -1558,33 +1558,41 @@ footer {
 //cart page start
 
 #maincard {
+    .homeclick {
+        margin-left: 120px;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.56);
+        font-size: 12px;
+
+        &:hover {
+            color: rgb(35, 58, 149);
+        }
+    }
+
+    .cartclick {
+        
+        text-decoration: none;
+        color: rgb(198, 198, 198);
+        font-size: 12px;
+        cursor: none;
+    }
+    .updatecartsection {
+        margin-top: 50px;
+        margin-left: 120px;
+        border: 1px solid rgb(107, 107, 107);
+        padding-top: 10px;
+        width: 83%;
+    }
+
+    #empity{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
     #cont {
-        .homeclick {
-            margin-left: 5px;
-            text-decoration: none;
-            color: rgba(0, 0, 0, 0.56);
-            font-size: 12px;
-            &:hover{
-                color: rgb(35, 58, 149);
-            }
-        }
 
-        .cartclick {
-            margin-left: 5px;
-            text-decoration: none;
-            color: rgb(198, 198, 198);
-            font-size: 12px;
-            cursor: none;
-        }
-
-        .updatecartsection {
-            margin-top: 50px;
-            margin-left: 5px;
-            border: 1px solid rgb(107, 107, 107);
-            padding-top: 10px;
-            width: 97%;
-        }
-
+      
         .rigthCartSide {
 
             button {

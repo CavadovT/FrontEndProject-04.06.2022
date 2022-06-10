@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cnt{
+    border-radius: 50%;
+    background: red;
+    font-size: 15px;
+    padding: 3px;
+    color: white;
+}
+.nvb{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.mrgn{
+    margin: 0 10px;
+    color: white;
+    padding: 3px;
+    background: rgb(83,104,114);
+    border-radius: 50%;
+}
+.btnrmv{
+    font-weight: bold;
+    font-size: 20px;
+    background: white;
+    border: none;
+    margin-left: 15px;
+}

@@ -1466,31 +1466,40 @@ footer .copyrightBody .copyright {
   margin-left: auto;
 }
 
-#maincard #cont .homeclick {
-  margin-left: 5px;
+#maincard .homeclick {
+  margin-left: 120px;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.56);
   font-size: 12px;
 }
 
-#maincard #cont .homeclick:hover {
+#maincard .homeclick:hover {
   color: #233a95;
 }
 
-#maincard #cont .cartclick {
-  margin-left: 5px;
+#maincard .cartclick {
   text-decoration: none;
   color: #c6c6c6;
   font-size: 12px;
   cursor: none;
 }
 
-#maincard #cont .updatecartsection {
+#maincard .updatecartsection {
   margin-top: 50px;
-  margin-left: 5px;
+  margin-left: 120px;
   border: 1px solid #6b6b6b;
   padding-top: 10px;
-  width: 97%;
+  width: 83%;
+}
+
+#maincard #empity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
 }
 
 #maincard #cont .rigthCartSide button {

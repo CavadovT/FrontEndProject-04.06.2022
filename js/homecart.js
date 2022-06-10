@@ -1,6 +1,6 @@
 //start
 let addBtns = document.querySelectorAll(".addBtn");
-let productCount = document.getElementById("productCount");
+let productCount = document.querySelector(".productCount");
 
 addBtns.forEach((btn) => {
   btn.addEventListener("click", function (event) {
@@ -10,17 +10,14 @@ addBtns.forEach((btn) => {
       localStorage.setItem("basket", JSON.stringify([]));
     }
     let arr = JSON.parse(localStorage.getItem("basket"));
-    let prodId = this.parentElement.getAttribute("data-id");
+    let prodId = this.parentElement.parentElement.getAttribute("data-id");
     let existProduct = arr.find((e) => e.id == prodId);
 
     if (existProduct == undefined) {
       arr.push({
         id: prodId,
-        // price: this.previousElementSibling.firstElementChild.innerText,
-        imgUrl:
-          this.parentElement.firstElementChild.getAttribute(
-            "src"
-          ),
+        price: this.previousElementSibling.innerText,
+        imgUrl: this.parentElement.firstElementChild.getAttribute("src"),
         name: this.parentElement.firstElementChild.nextElementSibling.innerText,
         count: 1,
       });
@@ -32,15 +29,15 @@ addBtns.forEach((btn) => {
   });
 });
 
-
 function writeProductCount() {
   if (localStorage.getItem("basket") != null) {
     let arr = JSON.parse(localStorage.getItem("basket"));
-    let totalCount=0;
-    arr.map(product=>{
-      totalCount+=product.count;
-    })
-   productCount.innerText=totalCount;
+    let totalCount = 0;
+    arr.map((product) => {
+      console.log(product.price);
+      totalCount += parseInt(product.count);
+    });
+    productCount.innerText = totalCount;
   }
 }
 writeProductCount();
