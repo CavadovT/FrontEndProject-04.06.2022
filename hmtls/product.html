@@ -74,9 +74,85 @@
                     <p class="logoTitle">Online Grocery Shopping Center</p>
                 </div>
                 <div class="col-2 ">
-                    <div class="location d-flex">
+                    <div class="location d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <span class="title">Your Location</span>
-                        <span class="content">Select Location</span>
+
+                        <span class="content">Select Location <i class="fa-solid fa-chevron-down"></i></span>
+
+
+
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="modal-title" id="exampleModalLabel">
+                                        <strong>Choose your Delivery Location</strong>
+                                        <p style="font-size: 12px;">Enter your address and we will specify the offer for
+                                            your area.</p>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="d-flex">
+                                        <input class="form-control modalsearch me-2" type="search"
+                                            placeholder="     Search your area" aria-label="Search">
+                                        <i class="fa-solid fa-search modaliconsearch"></i>
+                                    </form>
+                                    <ul class="list-unstyled" style="height:250px; overflow: scroll;">
+                                        <li class="d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Azerbaycan</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Finlandiya</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="mb-1 d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Maldova</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="mb-1 d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Serbiya</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="mb-1 d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Rusiya</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="mb-1 d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Turkiye</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="mb-1 d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Pakistan</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="mb-1 d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Isvech</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="mb-1 d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Hollandiya</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="mb-1 d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Italiya</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="mb-1 d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Fransa</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-5 searchProduct ">
@@ -186,349 +262,351 @@
 
     <!-- main section start -->
     <main>
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-    </main>
+            <!-- Indicators/dots -->
+            <div class="container-fluid productBody">
+                <section class="firstSection">
+                    <div class="container ">
+                        <h4>All Natural Italian-Style Chicken Meatballs</h4>
+                        <h6>
+                            Brands
+                            Welch's
+                            1 REVIEW
+                            SKU: ZU49VOR</h6>
+                        <div class="col-11 d-flex">
+                            <div class="row leftPart col-4">
 
-    <!-- main section end -->
-    <!-- Carousel -->
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-        <!-- Indicators/dots -->
-        <div class="container-fluid productBody">
-            <section class="firstSection">
-                <div class="container ">
-                    <h4>All Natural Italian-Style Chicken Meatballs</h4>
-                    <h6>
-                        Brands
-                        Welch's
-                        1 REVIEW
-                        SKU: ZU49VOR</h6>
-                    <div class="col-11 d-flex">
-                        <div class="row leftPart col-4">
-
-                            <!-- The slideshow/carousel -->
-                            <div id="productInfo" class="carousel-inner w-100">
-                                <div class="carousel-item active">
-                                    <img src="/images/imgproducts/product-image-62.jpg" alt="62" class="d-block">
+                                <!-- The slideshow/carousel -->
+                                <div id="productInfo" class="carousel-inner w-100">
+                                    <div class="carousel-item active">
+                                        <img src="/images/imgproducts/product-image-62.jpg" alt="62" class="d-block">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/images/imgproducts/product-image2-47.jpg" alt="47" class="d-block">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/images/imgproducts/product-image3-35.jpg" alt="35" class="d-block">
+                                    </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <img src="/images/imgproducts/product-image2-47.jpg" alt="47" class="d-block">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/images/imgproducts/product-image3-35.jpg" alt="35" class="d-block">
-                                </div>
-                            </div>
-                            <div class="carousel-indicators w-25">
-                                <div class="btns d-flex">
-                                    <img style="height:50px; width:50px;" type="button" data-bs-target="#demo"
-                                        data-bs-slide-to="0" class="active"
-                                        src="/images/imgproducts/product-image-62-150x150.jpg" alt="">
-                                    <img style="height:50px; width:50px;" type="button" data-bs-target="#demo"
-                                        data-bs-slide-to="1" class=""
-                                        src="/images/imgproducts/product-image2-47-150x150.jpg" alt="">
-                                    <img style="height:50px; width:50px;" type="button" data-bs-target="#demo"
-                                        data-bs-slide-to="2" class=""
-                                        src="/images/imgproducts/product-image3-35-150x150.jpg" alt="">
+                                <div class="carousel-indicators w-25">
+                                    <div class="btns d-flex">
+                                        <img style="height:50px; width:50px;" type="button" data-bs-target="#demo"
+                                            data-bs-slide-to="0" class="active"
+                                            src="/images/imgproducts/product-image-62-150x150.jpg" alt="">
+                                        <img style="height:50px; width:50px;" type="button" data-bs-target="#demo"
+                                            data-bs-slide-to="1" class=""
+                                            src="/images/imgproducts/product-image2-47-150x150.jpg" alt="">
+                                        <img style="height:50px; width:50px;" type="button" data-bs-target="#demo"
+                                            data-bs-slide-to="2" class=""
+                                            src="/images/imgproducts/product-image3-35-150x150.jpg" alt="">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-4 middlePart content">
-                            <p><span style="text-decoration: line-through;"> $9.35 </span>$ <span>7.25</span></p>
-                            <strong>IN STOCK</strong>
-                            <p>Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt.
-                                Class aptent taciti sociosqu ad litora torquent</p>
-                            <button type="submit" style="cursor: pointer;">-</button> <span
-                                style="margin: 0 5px;">1</span> <button type="submit"
-                                style="cursor: pointer; margin-right: 20px;">+</button>
-                            <button id="productBtn">Add To Cart</button>
-                            <input style="width: 40px;" disabled value="99" min="0" max="99" type="number">
-                            <button type="submit">Reset</button>
-                            <p><i class='bx bx-heart'></i>ADD TO WISHLIST </p>
-                            <p>Type: Organic</p>
-                            <p>MFG: Jun 4.2021</p>
-                            <p style="border-bottom: 1px solid;">LIFE: 30 days</p>
+                            <div class="col-4 middlePart content">
+                                <p><span style="text-decoration: line-through;"> $9.35 </span>$ <span>7.25</span></p>
+                                <strong>IN STOCK</strong>
+                                <p>Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt.
+                                    Class aptent taciti sociosqu ad litora torquent</p>
+                                <button type="submit" style="cursor: pointer;">-</button> <span
+                                    style="margin: 0 5px;">1</span> <button type="submit"
+                                    style="cursor: pointer; margin-right: 20px;">+</button>
+                                <button id="productBtn">Add To Cart</button>
+                                <input style="width: 40px;" disabled value="99" min="0" max="99" type="number">
+                                <button type="submit">Reset</button>
+                                <p><i class='bx bx-heart'></i>ADD TO WISHLIST </p>
+                                <p>Type: Organic</p>
+                                <p>MFG: Jun 4.2021</p>
+                                <p style="border-bottom: 1px solid;">LIFE: 30 days</p>
 
-                            <p>Category: Meats & Seafood</p>
-                            <p>Tags: chicken, natural, organic</p>
+                                <p>Category: Meats & Seafood</p>
+                                <p>Tags: chicken, natural, organic</p>
 
-                            <i class='bx bxl-facebook'></i>
-                            <i class='bx bxl-twitter'></i>
-                            <i class='bx bxl-pinterest-alt'></i>
-                            <i class='bx bxl-linkedin'></i>
-                            <i class='bx bxl-reddit'></i>
-                            <i class='bx bxl-whatsapp'></i>
-                        </div>
-                        <div class="col-4 rightPart">
-                            <p>Covid-19 Info: We keep delivering.</p>
-                            <div class="content">
-                                <span><i class="fas fa-truck"></i> Free Shipping apply to all orders over
-                                    $100</span>
-                                <span><i class="fas fa-truck"></i> Guranteed 100% Organic from natural farmas</span>
-                                <span><i class="fas fa-truck"></i> 1 Day Returns if you change your mind</span>
+                                <i class='bx bxl-facebook'></i>
+                                <i class='bx bxl-twitter'></i>
+                                <i class='bx bxl-pinterest-alt'></i>
+                                <i class='bx bxl-linkedin'></i>
+                                <i class='bx bxl-reddit'></i>
+                                <i class='bx bxl-whatsapp'></i>
+                            </div>
+                            <div class="col-4 rightPart">
+                                <p>Covid-19 Info: We keep delivering.</p>
+                                <div class="content">
+                                    <span><i class="fas fa-truck"></i> Free Shipping apply to all orders over
+                                        $100</span>
+                                    <span><i class="fas fa-truck"></i> Guranteed 100% Organic from natural farmas</span>
+                                    <span><i class="fas fa-truck"></i> 1 Day Returns if you change your mind</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="tabSection">
-                <div class="container">
-                    <div class="row col-12 mt-5">
-                        <nav>
-                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <button class="nav-link active" id="nav-description-tab" data-bs-toggle="tab"
-                                    data-bs-target="#nav-description" type="button" role="tab"
-                                    aria-controls="nav-description" aria-selected="true">Description</button>
-                                <button class="nav-link" id="nav-info-tab" data-bs-toggle="tab"
-                                    data-bs-target="#nav-info" type="button" role="tab" aria-controls="nav-info"
-                                    aria-selected="false">ADDITIONAL INFORMATION</button>
-                                <button class="nav-link" id="nav-review-tab" data-bs-toggle="tab"
-                                    data-bs-target="#nav-review" type="button" role="tab" aria-controls="nav-review"
-                                    aria-selected="false">REVIEWS (1)</button>
-                            </div>
-                        </nav>
-                        <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="nav-description" role="tabpanel"
-                                aria-labelledby="nav-description-tab" tabindex="0">
-                                <div class="firstTabContent">
-                                    <p class="mt-4">Quisque varius diam vel metus mattis, id aliquam diam rhoncus.
-                                        Proin vitae
-                                        magna
-                                        in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel,
-                                        blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus
-                                        a.
-                                        Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras
-                                        imperdiet
-                                        est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt.
-                                        Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.</p>
+                <section class="tabSection">
+                    <div class="container">
+                        <div class="row col-12 mt-5">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="nav-link active" id="nav-description-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-description" type="button" role="tab"
+                                        aria-controls="nav-description" aria-selected="true">Description</button>
+                                    <button class="nav-link" id="nav-info-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-info" type="button" role="tab" aria-controls="nav-info"
+                                        aria-selected="false">ADDITIONAL INFORMATION</button>
+                                    <button class="nav-link" id="nav-review-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-review" type="button" role="tab" aria-controls="nav-review"
+                                        aria-selected="false">REVIEWS (1)</button>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-description" role="tabpanel"
+                                    aria-labelledby="nav-description-tab" tabindex="0">
+                                    <div class="firstTabContent">
+                                        <p class="mt-4">Quisque varius diam vel metus mattis, id aliquam diam rhoncus.
+                                            Proin vitae
+                                            magna
+                                            in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel,
+                                            blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus
+                                            a.
+                                            Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras
+                                            imperdiet
+                                            est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt.
+                                            Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.</p>
 
-                                    <p>Morbi ut sapien vitae odio accumsan gravida. Morbi vitae erat auctor,
-                                        eleifend
-                                        nunc a, lobortis neque. Praesent aliquam dignissim viverra. Maecenas lacus
-                                        odio,
-                                        feugiat eu nunc sit amet, maximus sagittis dolor. Vivamus nisi sapien,
-                                        elementum
-                                        sit amet eros sit amet, ultricies cursus ipsum. Sed consequat luctus ligula.
-                                        Curabitur laoreet rhoncus blandit. Aenean vel diam ut arcu pharetra
-                                        dignissim ut
-                                        sed leo. Vivamus faucibus, ipsum in vestibulum vulputate, lorem orci
-                                        convallis
-                                        quam, sit amet consequat nulla felis pharetra lacus. Duis semper erat
-                                        mauris,
-                                        sed egestas purus commodo vel.</p>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab"
-                                tabindex="0">
-                                <div class="secondTabContent d-flex">
-                                    <p>Brands</p>
-                                    <p>Welch's</p>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="nav-review" role="tabpanel" aria-labelledby="nav-contact-tab"
-                                tabindex="0">
-                                <div class="thirdTabContent">
-                                    <h6>1 REVIEW FOR ALL NATURAL ITALIAN-STYLE CHICKEN MEATBALLS</h6>
-                                    <div class="adminContent mt-4 d-flex">
-                                        <div class="adminImg">
-                                            <img src="/images/imgproducts/admin.jpeg" class="img-fluid rounded-top"
-                                                alt="">" alt="">
-                                        </div>
-                                        <div class="adminComment">
-                                            <i class='bx gold bxs-star'></i><i class='bx gold bxs-star'></i><i
-                                                class='bx gold bxs-star'></i><i class='bx gold bxs-star'></i><i
-                                                class='bx grey bxs-star'></i>
-                                            <p><strong>admin </strong>– <span>May 1, 2021</span></p>
-                                            <p>Sed perspiciatis unde omnis iste natus error sit voluptatem
-                                                accusantium doloremque laudantium.</p>
-                                        </div>
+                                        <p>Morbi ut sapien vitae odio accumsan gravida. Morbi vitae erat auctor,
+                                            eleifend
+                                            nunc a, lobortis neque. Praesent aliquam dignissim viverra. Maecenas lacus
+                                            odio,
+                                            feugiat eu nunc sit amet, maximus sagittis dolor. Vivamus nisi sapien,
+                                            elementum
+                                            sit amet eros sit amet, ultricies cursus ipsum. Sed consequat luctus ligula.
+                                            Curabitur laoreet rhoncus blandit. Aenean vel diam ut arcu pharetra
+                                            dignissim ut
+                                            sed leo. Vivamus faucibus, ipsum in vestibulum vulputate, lorem orci
+                                            convallis
+                                            quam, sit amet consequat nulla felis pharetra lacus. Duis semper erat
+                                            mauris,
+                                            sed egestas purus commodo vel.</p>
                                     </div>
-                                    <h6 class="secondHead">Add a review</h6>
-                                    <div class="emailContent">
-                                        <p>Your email address will not be published. Required fields are marked *
-                                        </p>
-                                        <p>Your rating *</p>
-                                        <p id="rating">
-                                            <span><i class='bx grey bxs-star'></i></span><span class="line">|</span>
-                                            <span><i class='bx grey bxs-star'></i><i
-                                                    class='bx grey bxs-star'></i></span><span class="line">|</span>
-                                            <span><i class='bx grey bxs-star'></i><i class='bx grey bxs-star'></i></i><i
-                                                    class='bx grey bxs-star'></i></span><span class="line">|</span>
-                                            <span><i class='bx grey bxs-star'></i><i class='bx grey bxs-star'></i></i><i
-                                                    class='bx grey bxs-star'></i><i
-                                                    class='bx grey bxs-star'></i></span><span class="line">|</span>
-                                            <span><i class='bx grey bxs-star'></i><i class='bx grey bxs-star'></i></i><i
-                                                    class='bx grey bxs-star'></i><i class='bx grey bxs-star'></i><i
-                                                    class='bx grey bxs-star'></i></span>
-                                        </p>
-                                        <form action="">
-                                            <label>Your review *</label>
-                                            <textarea name="" id="" cols="" rows=""></textarea>
-                                            <label for="">Name *</label>
-                                            <input class="inp" type="text">
-                                            <label for="">Email *</label>
-                                            <input class="inp" type="email">
-                                            <div class="mb-3 form-check">
-                                                <input type="checkbox" class="form-check-input check"
-                                                    id="exampleCheck1">
-                                                <label class="form-check-label" for="exampleCheck1"> Save my name,
-                                                    email, and website in this browser for the next time I
-                                                    comment.</label>
+                                </div>
+                                <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab"
+                                    tabindex="0">
+                                    <div class="secondTabContent d-flex">
+                                        <p>Brands</p>
+                                        <p>Welch's</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-review" role="tabpanel"
+                                    aria-labelledby="nav-contact-tab" tabindex="0">
+                                    <div class="thirdTabContent">
+                                        <h6>1 REVIEW FOR ALL NATURAL ITALIAN-STYLE CHICKEN MEATBALLS</h6>
+                                        <div class="adminContent mt-4 d-flex">
+                                            <div class="adminImg">
+                                                <img src="/images/imgproducts/admin.jpeg" class="img-fluid rounded-top"
+                                                    alt="">" alt="">
                                             </div>
-                                            <button type="submit" class="btn btn-primary">Submit</button>
-                                        </form>
+                                            <div class="adminComment">
+                                                <i class='bx gold bxs-star'></i><i class='bx gold bxs-star'></i><i
+                                                    class='bx gold bxs-star'></i><i class='bx gold bxs-star'></i><i
+                                                    class='bx grey bxs-star'></i>
+                                                <p><strong>admin </strong>– <span>May 1, 2021</span></p>
+                                                <p>Sed perspiciatis unde omnis iste natus error sit voluptatem
+                                                    accusantium doloremque laudantium.</p>
+                                            </div>
+                                        </div>
+                                        <h6 class="secondHead">Add a review</h6>
+                                        <div class="emailContent">
+                                            <p>Your email address will not be published. Required fields are marked *
+                                            </p>
+                                            <p>Your rating *</p>
+                                            <p id="rating">
+                                                <span><i class='bx grey bxs-star'></i></span><span class="line">|</span>
+                                                <span><i class='bx grey bxs-star'></i><i
+                                                        class='bx grey bxs-star'></i></span><span class="line">|</span>
+                                                <span><i class='bx grey bxs-star'></i><i
+                                                        class='bx grey bxs-star'></i></i><i
+                                                        class='bx grey bxs-star'></i></span><span class="line">|</span>
+                                                <span><i class='bx grey bxs-star'></i><i
+                                                        class='bx grey bxs-star'></i></i><i
+                                                        class='bx grey bxs-star'></i><i
+                                                        class='bx grey bxs-star'></i></span><span class="line">|</span>
+                                                <span><i class='bx grey bxs-star'></i><i
+                                                        class='bx grey bxs-star'></i></i><i
+                                                        class='bx grey bxs-star'></i><i class='bx grey bxs-star'></i><i
+                                                        class='bx grey bxs-star'></i></span>
+                                            </p>
+                                            <form action="">
+                                                <label>Your review *</label>
+                                                <textarea name="" id="" cols="" rows=""></textarea>
+                                                <label for="">Name *</label>
+                                                <input class="inp" type="text">
+                                                <label for="">Email *</label>
+                                                <input class="inp" type="email">
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input check"
+                                                        id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1"> Save my name,
+                                                        email, and website in this browser for the next time I
+                                                        comment.</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="lastSection">
-                <div class="container">
-                    <h5>RELATED PRODUCTS</h5>
-                    <div class="products">
-                        <div class="d-flex" style="flex-wrap: wrap;">
-                            <div data-id="62" class="product  col-3">
-                                <div class="content">
-                                    <img src="/images/product-image-62-346x310.jpg" alt="">
-                                    <p>All Natural Italian-Style Chicken Meatballs </p>
-                                    <i class="fas minimize fa-compress"></i>
-                                    <i class='bx heart bx-heart'></i>
-                                    <span class="discount">23%</span>
-                                    <span class="offer">RECOMMENDED</span>
-                                    <span class="type d-none"></span>
-                                    <strong>IN STOCK</strong>
-                                    <p><img src="/images/imgstars/4star.jpg" alt=""></p>
-                                    <span style="text-decoration: line-through;">$9.25 </span><span>7.58 </span>
-                                    <button class="btn btn-primary addBtn">Add To Card</button>
-                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
+                <section class="lastSection">
+                    <div class="container">
+                        <h5>RELATED PRODUCTS</h5>
+                        <div class="products">
+                            <div class="d-flex" style="flex-wrap: wrap;">
+                                <div data-id="62" class="product  col-3">
+                                    <div class="content">
+                                        <img src="/images/product-image-62-346x310.jpg" alt="">
+                                        <p>All Natural Italian-Style Chicken Meatballs </p>
+                                        <i class="fas minimize fa-compress"></i>
+                                        <i class='bx heart bx-heart'></i>
+                                        <span class="discount">23%</span>
+                                        <span class="offer">RECOMMENDED</span>
+                                        <span class="type d-none"></span>
+                                        <strong>IN STOCK</strong>
+                                        <p><img src="/images/imgstars/4star.jpg" alt=""></p>
+                                        <span style="text-decoration: line-through;">$9.25 </span><span>7.58 </span>
+                                        <button class="btn btn-primary addBtn">Add To Card</button>
+                                        <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div data-id="60" class="product col-3">
-                                <div class="content">
-                                    <img src="/images/product-image-60-346x310.jpg" alt="">
-                                    <p>All Natural Italian-Style Chicken Meatballs </p>
-                                    <i class="fas minimize fa-compress"></i>
-                                    <i class='bx heart bx-heart'></i>
-                                    <span class="discount">23%</span>
-                                    <span class="offer">RECOMMENDED</span>
-                                    <span class="type d-none"></span>
-                                    <strong>IN STOCK</strong>
-                                    <p><img src="/images/imgstars/4star.jpg" alt=""></p>
-                                    <span style="text-decoration: line-through;">$9.25 </span><span>7.58 </span>
-                                    <button class="btn btn-primary addBtn">Add To Card</button>
-                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
+                                <div data-id="60" class="product col-3">
+                                    <div class="content">
+                                        <img src="/images/product-image-60-346x310.jpg" alt="">
+                                        <p>All Natural Italian-Style Chicken Meatballs </p>
+                                        <i class="fas minimize fa-compress"></i>
+                                        <i class='bx heart bx-heart'></i>
+                                        <span class="discount">23%</span>
+                                        <span class="offer">RECOMMENDED</span>
+                                        <span class="type d-none"></span>
+                                        <strong>IN STOCK</strong>
+                                        <p><img src="/images/imgstars/4star.jpg" alt=""></p>
+                                        <span style="text-decoration: line-through;">$9.25 </span><span>7.58 </span>
+                                        <button class="btn btn-primary addBtn">Add To Card</button>
+                                        <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div data-id="46" class="product col-3">
-                                <div class="content">
-                                    <img src="/images/product-image-60-346x310.jpg" alt="">
-                                    <p>All Natural Italian-Style Chicken Meatballs </p>
-                                    <i class="fas minimize fa-compress"></i>
-                                    <i class='bx heart bx-heart'></i>
-                                    <span class="discount">23%</span>
-                                    <span class="offer">RECOMMENDED</span>
-                                    <span class="type d-none"></span>
-                                    <strong>IN STOCK</strong>
-                                    <p><img src="/images/imgstars/4star.jpg" alt=""></p>
-                                    <span style="text-decoration: line-through;">$9.25 </span><span>7.58 </span>
-                                    <button class="btn btn-primary addBtn">Add To Card</button>
-                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
+                                <div data-id="46" class="product col-3">
+                                    <div class="content">
+                                        <img src="/images/product-image-60-346x310.jpg" alt="">
+                                        <p>All Natural Italian-Style Chicken Meatballs </p>
+                                        <i class="fas minimize fa-compress"></i>
+                                        <i class='bx heart bx-heart'></i>
+                                        <span class="discount">23%</span>
+                                        <span class="offer">RECOMMENDED</span>
+                                        <span class="type d-none"></span>
+                                        <strong>IN STOCK</strong>
+                                        <p><img src="/images/imgstars/4star.jpg" alt=""></p>
+                                        <span style="text-decoration: line-through;">$9.25 </span><span>7.58 </span>
+                                        <button class="btn btn-primary addBtn">Add To Card</button>
+                                        <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div data-id="45" class="product col-3">
-                                <div class="content">
-                                    <img src="/images/product-image-45-346x310.jpg" alt="">
-                                    <i class="fas minimize fa-compress"></i>
-                                    <i class='bx heart bx-heart'></i>
-                                    <p>All Natural Italian-Style Chicken Meatballs </p>
-                                    <span class="discount">23%</span>
-                                    <span class="offer">RECOMMENDED</span>
-                                    <span class="type d-none"></span>
-                                    <strong>IN STOCK</strong>
-                                    <p><img src="/images/imgstars/4star.jpg" alt=""></p>
-                                    <span style="text-decoration: line-through;">$9.25 </span><span>7.58 </span>
-                                    <button class="btn btn-primary addBtn">Add To Card</button>
-                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h5>RECENTLY VIEWED PRODUCTS</h5>
-                    <div class="products">
-                        <div class="d-flex" style="flex-wrap: wrap;">
-                            <div data-id="62" class="product  col-3">
-                                <div class="content">
-                                    <img src="/images/product-image-62-346x310.jpg" alt="">
-                                    <p>All Natural Italian-Style Chicken Meatballs </p>
-                                    <i class="fas minimize fa-compress"></i>
-                                    <i class='bx heart bx-heart'></i>
-                                    <span class="discount">23%</span>
-                                    <span class="offer">RECOMMENDED</span>
-                                    <span class="type d-none"></span>
-                                    <strong>IN STOCK</strong>
-                                    <p><img src="/assets/img/starts/4star.JPG" alt=""></p>
-                                    <span style="text-decoration: line-through;">$9.25 </span><span>7.58 </span>
-                                    <button class="btn btn-primary addBtn">Add To Card</button>
-                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
-                                </div>
-                            </div>
-                            <div data-id="60" class="product col-3">
-                                <div class="content">
-                                    <img src="/images/product-image-60-346x310.jpg" alt="">
-                                    <p>All Natural Italian-Style Chicken Meatballs </p>
-                                    <i class="fas minimize fa-compress"></i>
-                                    <i class='bx heart bx-heart'></i>
-                                    <span class="discount">23%</span>
-                                    <span class="offer">RECOMMENDED</span>
-                                    <span class="type d-none"></span>
-                                    <strong>IN STOCK</strong>
-                                    <p><img src="/images/imgstars/4star.jpg" alt=""></p>
-                                    <span style="text-decoration: line-through;">$9.25 </span><span>7.58 </span>
-                                    <button class="btn btn-primary addBtn">Add To Card</button>
-                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
-                                </div>
-                            </div>
-                            <div data-id="46" class="product col-3">
-                                <div class="content">
-                                    <img src="/images/product-image-46-346x310.jpg" alt="">
-                                    <p>All Natural Italian-Style Chicken Meatballs </p>
-                                    <i class="fas minimize fa-compress"></i>
-                                    <i class='bx heart bx-heart'></i>
-                                    <span class="discount">23%</span>
-                                    <span class="offer">RECOMMENDED</span>
-                                    <span class="type d-none"></span>
-                                    <strong>IN STOCK</strong>
-                                    <p><img src="/images/imgstars/5star.jpg" alt=""></p>
-                                    <span style="text-decoration: line-through;">$9.25 </span><span>7.58 </span>
-                                    <button class="btn btn-primary addBtn">Add To Card</button>
-                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
-                                </div>
-                            </div>
-                            <div data-id="45" class="product col-3">
-                                <div class="content">
-                                    <img src="/images/product-image-45-346x310.jpg" alt="">
-                                    <p>All Natural Italian-Style Chicken Meatballs </p>
-                                    <i class="fas minimize fa-compress"></i>
-                                    <i class='bx heart bx-heart'></i>
-                                    <span class="discount">23%</span>
-                                    <span class="offer">RECOMMENDED</span>
-                                    <span class="type d-none"></span>
-                                    <strong>IN STOCK</strong>
-                                    <p><img src="/images/imgstars/5star.jpg" alt=""></p>
-                                    <span style="text-decoration: line-through;">$9.25 </span><span>7.58 </span>
-                                    <button class="btn btn-primary addBtn">Add To Card</button>
-                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
+                                <div data-id="45" class="product col-3">
+                                    <div class="content">
+                                        <img src="/images/product-image-45-346x310.jpg" alt="">
+                                        <i class="fas minimize fa-compress"></i>
+                                        <i class='bx heart bx-heart'></i>
+                                        <p>All Natural Italian-Style Chicken Meatballs </p>
+                                        <span class="discount">23%</span>
+                                        <span class="offer">RECOMMENDED</span>
+                                        <span class="type d-none"></span>
+                                        <strong>IN STOCK</strong>
+                                        <p><img src="/images/imgstars/4star.jpg" alt=""></p>
+                                        <span style="text-decoration: line-through;">$9.25 </span><span>7.58 </span>
+                                        <button class="btn btn-primary addBtn">Add To Card</button>
+                                        <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-            </section>
+                        <h5>RECENTLY VIEWED PRODUCTS</h5>
+                        <div class="products">
+                            <div class="d-flex" style="flex-wrap: wrap;">
+                                <div data-id="62" class="product  col-3">
+                                    <div class="content">
+                                        <img src="/images/product-image-62-346x310.jpg" alt="">
+                                        <p>All Natural Italian-Style Chicken Meatballs </p>
+                                        <i class="fas minimize fa-compress"></i>
+                                        <i class='bx heart bx-heart'></i>
+                                        <span class="discount">23%</span>
+                                        <span class="offer">RECOMMENDED</span>
+                                        <span class="type d-none"></span>
+                                        <strong>IN STOCK</strong>
+                                        <p><img src="/assets/img/starts/4star.JPG" alt=""></p>
+                                        <span style="text-decoration: line-through;">$9.25 </span><span>7.58 </span>
+                                        <button class="btn btn-primary addBtn">Add To Card</button>
+                                        <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
+                                    </div>
+                                </div>
+                                <div data-id="60" class="product col-3">
+                                    <div class="content">
+                                        <img src="/images/product-image-60-346x310.jpg" alt="">
+                                        <p>All Natural Italian-Style Chicken Meatballs </p>
+                                        <i class="fas minimize fa-compress"></i>
+                                        <i class='bx heart bx-heart'></i>
+                                        <span class="discount">23%</span>
+                                        <span class="offer">RECOMMENDED</span>
+                                        <span class="type d-none"></span>
+                                        <strong>IN STOCK</strong>
+                                        <p><img src="/images/imgstars/4star.jpg" alt=""></p>
+                                        <span style="text-decoration: line-through;">$9.25 </span><span>7.58 </span>
+                                        <button class="btn btn-primary addBtn">Add To Card</button>
+                                        <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
+                                    </div>
+                                </div>
+                                <div data-id="46" class="product col-3">
+                                    <div class="content">
+                                        <img src="/images/product-image-46-346x310.jpg" alt="">
+                                        <p>All Natural Italian-Style Chicken Meatballs </p>
+                                        <i class="fas minimize fa-compress"></i>
+                                        <i class='bx heart bx-heart'></i>
+                                        <span class="discount">23%</span>
+                                        <span class="offer">RECOMMENDED</span>
+                                        <span class="type d-none"></span>
+                                        <strong>IN STOCK</strong>
+                                        <p><img src="/images/imgstars/5star.jpg" alt=""></p>
+                                        <span style="text-decoration: line-through;">$9.25 </span><span>7.58 </span>
+                                        <button class="btn btn-primary addBtn">Add To Card</button>
+                                        <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
+                                    </div>
+                                </div>
+                                <div data-id="45" class="product col-3">
+                                    <div class="content">
+                                        <img src="/images/product-image-45-346x310.jpg" alt="">
+                                        <p>All Natural Italian-Style Chicken Meatballs </p>
+                                        <i class="fas minimize fa-compress"></i>
+                                        <i class='bx heart bx-heart'></i>
+                                        <span class="discount">23%</span>
+                                        <span class="offer">RECOMMENDED</span>
+                                        <span class="type d-none"></span>
+                                        <strong>IN STOCK</strong>
+                                        <p><img src="/images/imgstars/5star.jpg" alt=""></p>
+                                        <span style="text-decoration: line-through;">$9.25 </span><span>7.58 </span>
+                                        <button class="btn btn-primary addBtn">Add To Card</button>
+                                        <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </div>
+
         </div>
+    </main>
+    <!-- main section end -->
 
-    </div>
     <!-- footer section start -->
     <footer>
         <div class="container-fluid couponSection">
@@ -673,9 +751,20 @@
 
         <div class="container-fluid copyrightBody my-4">
             <div class="container copyright">
-                <div class="row py-2 ">
-                    <div class="">Copyright 2022 © Bacola WordPress Theme. All rights reserved. Powered by KlbTheme.
+                <div class="row col-12 py-2 ">
+                    <div class="col-6">
+                        <div class="">Copyright 2022 © Bacola WordPress Theme. All rights reserved. Powered by KlbTheme.
+                        </div>
                     </div>
+                    <div class="col-6">
+                        <a class="text-secondary text-decoration-none" href="">Privacy Policy</a>
+                        <a class="text-secondary text-decoration-none" href="">Terms and Conditions</a>
+                        <a class="text-secondary text-decoration-none" href="">Cookie</a>
+                        <a href=""><a href="#"><img
+                                    src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/payments.jpg"
+                                    alt="payment"></a></a>
+                    </div>
+
                 </div>
             </div>
         </div>

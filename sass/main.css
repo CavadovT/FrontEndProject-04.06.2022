@@ -9,6 +9,34 @@
   position: relative !important;
 }
 
+.modalsearch {
+  position: relative;
+}
+
+.modaliconsearch {
+  position: absolute;
+  top: 8%;
+  left: 5%;
+}
+
+.locationnstyle {
+  border-radius: 1.875rem;
+  border: 1px solid rgba(107, 107, 107, 0.1);
+  text-decoration: none;
+  color: grey;
+  font-size: 12px;
+}
+
+.locationnstyle:hover {
+  background-color: gray;
+  color: white;
+}
+
+.list-unstyled li {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(107, 107, 107, 0.1);
+}
+
 .btnCategori {
   border-radius: 20px !important;
   padding: 20px 0 20px 0 !important;

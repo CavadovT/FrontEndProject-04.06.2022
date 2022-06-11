@@ -74,9 +74,85 @@
                     <p class="logoTitle">Online Grocery Shopping Center</p>
                 </div>
                 <div class="col-2 ">
-                    <div class="location d-flex">
+                    <div class="location d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <span class="title">Your Location</span>
-                        <span class="content">Select Location</span>
+
+                        <span class="content">Select Location <i class="fa-solid fa-chevron-down"></i></span>
+
+
+
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="modal-title" id="exampleModalLabel">
+                                        <strong>Choose your Delivery Location</strong>
+                                        <p style="font-size: 12px;">Enter your address and we will specify the offer for
+                                            your area.</p>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="d-flex">
+                                        <input class="form-control modalsearch me-2" type="search"
+                                            placeholder="     Search your area" aria-label="Search">
+                                        <i class="fa-solid fa-search modaliconsearch"></i>
+                                    </form>
+                                    <ul class="list-unstyled" style="height:250px; overflow: scroll;">
+                                        <li class="d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Azerbaycan</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Finlandiya</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="mb-1 d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Maldova</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="mb-1 d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Serbiya</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="mb-1 d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Rusiya</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="mb-1 d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Turkiye</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="mb-1 d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Pakistan</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="mb-1 d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Isvech</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="mb-1 d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Hollandiya</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="mb-1 d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Italiya</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                        <li class="mb-1 d-flex justify-content-between">
+                                            <a class="text-decoration-none text-secondary" href="">Fransa</a>
+                                            <a class="locationnstyle" href="">Min$130</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-5 searchProduct ">
@@ -921,9 +997,20 @@
 
         <div class="container-fluid copyrightBody my-4">
             <div class="container copyright">
-                <div class="row py-2 ">
-                    <div class="">Copyright 2022 © Bacola WordPress Theme. All rights reserved. Powered by KlbTheme.
+                <div class="row col-12 py-2 ">
+                    <div class="col-6">
+                        <div class="">Copyright 2022 © Bacola WordPress Theme. All rights reserved. Powered by KlbTheme.
+                        </div>
                     </div>
+                    <div class="col-6">
+                        <a class="text-secondary text-decoration-none" href="">Privacy Policy</a>
+                        <a class="text-secondary text-decoration-none" href="">Terms and Conditions</a>
+                        <a class="text-secondary text-decoration-none" href="">Cookie</a>
+                        <a href=""><a href="#"><img
+                                    src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/payments.jpg"
+                                    alt="payment"></a></a>
+                    </div>
+
                 </div>
             </div>
         </div>
