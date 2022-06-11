@@ -5,6 +5,16 @@
           box-sizing: border-box;
 }
 
+.endoff {
+  text-decoration: none;
+  color: #6b6b6b;
+}
+
+.endoff:hover {
+  text-decoration: underline;
+  color: #6b6b6b;
+}
+
 .categoriediv {
   position: relative !important;
 }
@@ -982,7 +992,7 @@ footer .contactBody .contact .contactNumb {
 
 footer .copyrightBody .copyright {
   opacity: 0.5;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .contact .head {

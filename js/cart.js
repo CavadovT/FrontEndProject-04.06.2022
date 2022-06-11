@@ -4,16 +4,25 @@ let backhome = document.getElementById("home");
 let totalfix = document.getElementById("totalfix");
 let emptiycart = document.getElementById("empity");
 let cardcontainer = document.getElementById("cont");
-let pagetotal=document.getElementById("ptotal");
+let pagetotal = document.getElementById("ptotal");
 let SumTotalPrice = 0;
+
+
+if(parseFloat(pagetotal.innerText)<0.5){
+emptiycart.classList.remove("d-none");
+cardcontainer.classList.add("d-none");
+}
+else{
+  emptiycart.classList.add("d-none");
+cardcontainer.classList.remove("d-none");
+}
 
 if (localStorage.getItem("basket") != null) {
   let arr = JSON.parse(localStorage.getItem("basket"));
-
   arr.forEach((prod) => {
     if (prod.count == 0) {
     } else {
-      emptiycart.classList.add("d-none");
+      
 
       let tr = document.createElement("tr");
       let tdImage = document.createElement("td");
@@ -65,7 +74,7 @@ if (localStorage.getItem("basket") != null) {
           SumTotalPrice -= parseFloat(prod.price);
           totalprice.innerText = SumTotalPrice.toFixed(2);
           totalfix.innerText = parseFloat(SumTotalPrice + 5).toFixed(2);
-          pagetotal.innerText=SumTotalPrice.toFixed(2);
+          pagetotal.innerText = SumTotalPrice.toFixed(2);
         } else {
           spancount.innerText = prod.count;
           tdQuantity.append(minusBtn, spancount, plusBtn);
@@ -75,7 +84,7 @@ if (localStorage.getItem("basket") != null) {
           tdSubtotal.append(spanSubtotal, btnremove);
           SumTotalPrice -= parseFloat(prod.price);
           totalprice.innerText = SumTotalPrice.toFixed(2);
-          pagetotal.innerText=SumTotalPrice.toFixed(2);
+          pagetotal.innerText = SumTotalPrice.toFixed(2);
           totalfix.innerText = parseFloat(SumTotalPrice + 5).toFixed(2);
         }
 
@@ -96,7 +105,7 @@ if (localStorage.getItem("basket") != null) {
 
         SumTotalPrice += parseFloat(prod.price);
         totalprice.innerText = SumTotalPrice.toFixed(2);
-        pagetotal.innerText=SumTotalPrice.toFixed(2);
+        pagetotal.innerText = SumTotalPrice.toFixed(2);
         totalfix.innerText = parseFloat(SumTotalPrice + 5).toFixed(2);
 
         localStorage.setItem("basket", JSON.stringify(arr));
@@ -107,7 +116,7 @@ if (localStorage.getItem("basket") != null) {
         tr.remove();
         SumTotalPrice -= parseFloat(prod.price * prod.count);
         totalprice.innerText = SumTotalPrice.toFixed(2);
-        pagetotal.innerText=SumTotalPrice.toFixed(2);
+        pagetotal.innerText = SumTotalPrice.toFixed(2);
         totalfix.innerText = parseFloat(SumTotalPrice + 5).toFixed(2);
         prod.count = 0;
         localStorage.setItem("basket", JSON.stringify(arr));
@@ -121,13 +130,13 @@ if (localStorage.getItem("basket") != null) {
       table.lastElementChild.append(tr);
       SumTotalPrice += parseFloat(prod.count * prod.price);
       totalprice.innerText = SumTotalPrice.toFixed(2);
-      pagetotal.innerText=SumTotalPrice.toFixed(2);
+      pagetotal.innerText = SumTotalPrice.toFixed(2);
       totalfix.innerText = parseFloat(SumTotalPrice + 5).toFixed(2);
       localStorage.setItem("basket", JSON.stringify(arr));
       writeProductCount;
     }
   });
-}
+} 
 function writeProductCount() {
   if (localStorage.getItem("basket") != null) {
     let arr = JSON.parse(localStorage.getItem("basket"));
@@ -140,3 +149,4 @@ function writeProductCount() {
   }
 }
 writeProductCount();
+

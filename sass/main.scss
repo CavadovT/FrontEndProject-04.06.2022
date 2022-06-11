@@ -4,30 +4,45 @@
     box-sizing: border-box;
 }
 
+.endoff {
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+
+    &:hover {
+        text-decoration: underline;
+        color: rgb(107, 107, 107);
+
+    }
+}
+
 .categoriediv {
     position: relative !important;
 }
-.modalsearch{
+
+.modalsearch {
     position: relative;
-   
+
 }
-.modaliconsearch{
+
+.modaliconsearch {
     position: absolute;
     top: 8%;
-    left: 85%;  
+    left: 85%;
 }
-.locationnstyle{
+
+.locationnstyle {
     border-radius: 1.875rem;
-    border: 1px solid rgba(107, 107, 107,0.1);
+    border: 1px solid rgba(107, 107, 107, 0.1);
     text-decoration: none;
     color: grey;
     font-size: 12px;
-   
+
 }
-.list-unstyled{
-    li{
+
+.list-unstyled {
+    li {
         padding: 1rem;
-        border-bottom: 1px solid rgba(107, 107, 107,0.1);
+        border-bottom: 1px solid rgba(107, 107, 107, 0.1);
     }
 }
 
@@ -1025,7 +1040,7 @@ footer {
     .copyrightBody {
         .copyright {
             opacity: 0.5;
-            font-size: 14px;
+            font-size: 12px;
 
         }
     }

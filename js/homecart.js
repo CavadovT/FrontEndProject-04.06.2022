@@ -1,8 +1,8 @@
 //start
 let addBtns = document.querySelectorAll(".addBtn");
 let productCount = document.querySelector(".productCount");
-let ptotal=document.getElementById("ptotal");
-let sum=0;
+let ptotal = document.getElementById("ptotal");
+let sum = 0;
 
 addBtns.forEach((btn) => {
   btn.addEventListener("click", function (event) {
@@ -23,6 +23,7 @@ addBtns.forEach((btn) => {
         name: this.parentElement.firstElementChild.nextElementSibling.innerText,
         count: 1,
       });
+   
     } else {
       existProduct.count++;
 
@@ -38,11 +39,11 @@ function writeProductCount() {
     let totalCount = 0;
     arr.map((product) => {
       totalCount += parseInt(product.count);
-      sum+=parseFloat(product.count * product.price)
-      ptotal.innerText=sum.toFixed(2);
-
+      sum += parseFloat(product.price*product.count);
     });
+
     productCount.innerText = totalCount;
+    ptotal.innerText = sum.toFixed(2);
   }
 }
 writeProductCount();
