@@ -5,16 +5,17 @@ let totalfix = document.getElementById("totalfix");
 let emptiycart = document.getElementById("empity");
 let cardcontainer = document.getElementById("cont");
 let pagetotal = document.getElementById("ptotal");
+let istrue = document.querySelector(".flattrue");
+let isfalse = document.querySelectorAll(".flatfalse");
+
 let SumTotalPrice = 0;
 
-
-if(parseFloat(pagetotal.innerText)<0.5){
-emptiycart.classList.remove("d-none");
-cardcontainer.classList.add("d-none");
-}
-else{
+if (parseFloat(pagetotal.innerText) < 0.5) {
+  emptiycart.classList.remove("d-none");
+  cardcontainer.classList.add("d-none");
+} else {
   emptiycart.classList.add("d-none");
-cardcontainer.classList.remove("d-none");
+  cardcontainer.classList.remove("d-none");
 }
 
 if (localStorage.getItem("basket") != null) {
@@ -22,8 +23,6 @@ if (localStorage.getItem("basket") != null) {
   arr.forEach((prod) => {
     if (prod.count == 0) {
     } else {
-      
-
       let tr = document.createElement("tr");
       let tdImage = document.createElement("td");
       let image = document.createElement("img");
@@ -107,7 +106,6 @@ if (localStorage.getItem("basket") != null) {
         totalprice.innerText = SumTotalPrice.toFixed(2);
         pagetotal.innerText = SumTotalPrice.toFixed(2);
         totalfix.innerText = parseFloat(SumTotalPrice + 5).toFixed(2);
-
         localStorage.setItem("basket", JSON.stringify(arr));
         writeProductCount();
       });
@@ -132,11 +130,19 @@ if (localStorage.getItem("basket") != null) {
       totalprice.innerText = SumTotalPrice.toFixed(2);
       pagetotal.innerText = SumTotalPrice.toFixed(2);
       totalfix.innerText = parseFloat(SumTotalPrice + 5).toFixed(2);
+      istrue.addEventListener("click", () => {
+        totalfix.innerText = parseFloat(SumTotalPrice+5).toFixed(2);
+      });
+      isfalse.forEach((e) => {
+        e.addEventListener("click", () => {
+          totalfix.innerText = parseFloat(SumTotalPrice).toFixed(2);
+        });
+      });
       localStorage.setItem("basket", JSON.stringify(arr));
       writeProductCount;
     }
   });
-} 
+}
 function writeProductCount() {
   if (localStorage.getItem("basket") != null) {
     let arr = JSON.parse(localStorage.getItem("basket"));
@@ -149,4 +155,3 @@ function writeProductCount() {
   }
 }
 writeProductCount();
-

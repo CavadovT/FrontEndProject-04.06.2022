@@ -5,6 +5,20 @@
           box-sizing: border-box;
 }
 
+.basketIcon {
+  position: relative;
+}
+
+.basketIcon .productCount {
+  position: absolute;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 20%;
+  top: 5%;
+}
+
 .endoff {
   text-decoration: none;
   color: #6b6b6b;
