@@ -16,7 +16,7 @@
 .modaliconsearch {
   position: absolute;
   top: 8%;
-  left: 5%;
+  left: 85%;
 }
 
 .locationnstyle {
@@ -25,11 +25,6 @@
   text-decoration: none;
   color: grey;
   font-size: 12px;
-}
-
-.locationnstyle:hover {
-  background-color: gray;
-  color: white;
 }
 
 .list-unstyled li {

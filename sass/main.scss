@@ -9,12 +9,12 @@
 }
 .modalsearch{
     position: relative;
+   
 }
 .modaliconsearch{
     position: absolute;
     top: 8%;
-    left: 5%;
-    
+    left: 85%;  
 }
 .locationnstyle{
     border-radius: 1.875rem;
@@ -22,10 +22,7 @@
     text-decoration: none;
     color: grey;
     font-size: 12px;
-    &:hover{
-        background-color: gray;
-        color: white;
-    }
+   
 }
 .list-unstyled{
     li{
